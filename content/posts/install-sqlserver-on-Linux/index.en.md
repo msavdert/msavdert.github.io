@@ -1,5 +1,5 @@
 ---
-weight: 4
+weight: 1
 title: "Install SQL Server and create a database on Red Hat"
 date: 2024-03-14T14:54:41+08:00
 #lastmod: 2020-03-03T16:29:41+08:00
@@ -9,6 +9,7 @@ authorLink: "https://feelit.khusika.dev"
 description: "FeelIt theme provides multiple shortcodes on top of built-in ones in Hugo."
 
 tags: ["mssql", "sqlserver", "linux"]
+categories: ["SQL Server"]
 
 lightgallery: true
 ---
