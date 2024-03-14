@@ -1,114 +1,71 @@
 ---
-title: "About FeelIt"
-date: 2019-08-02T11:04:49+08:00
+title: "Melih Savdert"
+subtitle: ""
 draft: false
+description: "About"
 
-lightgallery: true
+comment:
+  enable: false
+share:
+  enable: false
+toc:
+  enable: false
 
-math:
-  enable: true
+lightgallery: false
 ---
 
-{{< style "img { height: 1.25rem; }" >}}
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/releases)
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.110.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/khusika/FeelIt?style=flat-square)](https://github.com/khusika/FeelIt/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/khusika/FeelIt?style=social)](https://github.com/khusika/FeelIt)
-[![GitHub forks](https://img.shields.io/github/forks/khusika/FeelIt?style=social)](https://github.com/khusika/FeelIt/fork)
-{{< /style >}}
+### Projects & Contributions
 
-![Hugo Theme FeelIt](/images/Apple-Devices-Preview.webp "Hugo Theme FeelIt")
+Below here are some of projects and contributions done by me:
 
-### Features
+* [Canting Kernel](/canting): is an android-kernel based on Google kernel-common merged over CAF-kernel. Built to provide security and stability improvement.
 
-#### Performance and SEO
+* [Hugo FeelIt](https://github.com/khusika/FeelIt): is a clean, elegant but advanced blog theme for [Hugo](https://gohugo.io/).
 
-* :(fa-solid fa-rocket fa-fw): Optimized for **performance**: [99]/[100] on mobile and [100]/[100] on desktop in [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)
-* :(fa-brands fa-searchengin fa-fw): Optimized SEO performance with a correct **SEO SCHEMA** based on JSON-LD
-* :(fa-brands fa-google fa-fw): **[Google Analytics](https://analytics.google.com/analytics)** supported
-* :(fa-regular fa-chart-bar fa-fw): **[Fathom Analytics](https://usefathom.com/)** supported
-* :(fa-solid fa-chart-line fa-fw): **[GoatCounter Analytics](https://www.goatcounter.com/)** supported
-* :(fa-solid fa-search fa-fw): Search engine **verification** supported (Google, Bind, Yandex and Baidu)
-* :(fa-solid fa-tachometer-alt fa-fw): **CDN** for third-party libraries supported
-* :(fa-solid fa-cloud-download-alt fa-fw): Automatically converted images with **Lazy Load** by [lazysizes](https://github.com/aFarkas/lazysizes)
+* [RAJApps](https://play.google.com/store/apps/details?id=com.pit.qrcodesrajabrawijaya): This app is built to provide an attendance system based on QR-Codes scanner. I've contribute as a _front-end_ in the development of this application under [Rajabrawijaya Organization](https://rajabrawijaya.ub.ac.id/).
 
-#### Appearance and Layout
+* [XDA-Developers](https://xdaforums.com/m/khusika.5123347/): I got my title on this community as [_Recognized Developer_](https://www.xda-developers.com/page/recognized-developer-program/) and [_Recognized Contributor_](https://xdaforums.com/t/how-to-apply-to-become-a-recognized-contributor-themer-on-xda.1646309/#post-25915966), various open source projects including ROM, kernel, and mods are created by me. In early 2024, I joined as a [_Forum Moderator_](https://docs.google.com/document/d/1lK5rP103OL3StU3q9iqwX9LU_k8XABeSQIAT3EHCqgM/pub) in this forum.
 
-* [:(fa-solid fa-desktop):]/[:(fa-solid fa-mobile):] **Responsive** layout
-* [:(fa-solid fa-sun):]/[:(fa-solid fa-moon):] **[Light]/[Dark]** mode
-* :(fa-solid fa-layer-group fa-fw): Globally consistent **design language**
-* :(fa-solid fa-ellipsis-h fa-fw): **Pagination** supported
-* :(fa-regular fa-list-alt fa-fw): Easy-to-use and self-expanding **table of contents**
-* :(fa-solid fa-language fa-fw): **Multilanguage** supported and i18n ready
-* :(fa-brands fa-css3-alt fa-fw): Beautiful **CSS animation**
+* [Pixys OS](https://pixysos.com/): I'm officially a device [maintainer](https://pixysos.com/team/khusika) for [Poco X3 Pro](https://pixysos.com/vayu) as per [this change](https://github.com/PixysOS/official_devices/pull/109). I'm also actively contributing to Pixys OS through [my gerrit changes](https://gerrit.pixysos.com/q/owner:mail%2540khusika.dev).
 
-#### Social and Comment Systems
+* I've submited various of kernel fixes to the [lineageos.org](https://lineageos.org/) through [my code-review](https://review.lineageos.org/q/owner:mail@khusika.dev). The useful patches i've ever submited are `vDSO32` integration and also kernel compilation fixes with `CC_WERROR` on xiaomi devices.
 
-* :(fa-regular fa-user fa-fw): **Gravatar** supported by [Gravatar](https://gravatar.com)
-* :(fa-solid fa-user-circle fa-fw): Local **Avatar** supported
-* :(fa-regular fa-id-card fa-fw): Up to **64** social links supported
-* :(fa-solid fa-share-square fa-fw): Up to **28** share sites supported
-* :(fa-regular fa-comment fa-fw): **Disqus** comment system supported by [Disqus](https://disqus.com)
-* :(fa-regular fa-comment-dots fa-fw): **Gitalk** comment system supported by [Gitalk](https://github.com/gitalk/gitalk)
-* :(fa-regular fa-comment-alt fa-fw): **Valine** comment system supported by [Valine](https://valine.js.org/)
-* :(fa-solid fa-comments fa-fw): **Vssue** comment system supported by [Vssue](https://vssue.js.org/)
-* :(fa-regular fa-comments fa-fw): **Facebook comments** system supported by [Facebook](https://developers.facebook.com/docs/plugins/comments/)
-* :(fa-solid fa-comment fa-fw): **Telegram comments** system supported by [Comments](https://comments.app/)
-* :(fa-solid fa-comment-dots fa-fw): **Commento** comment system supported by [Commento](https://commento.io/)
-* :(fa-solid fa-comment-alt fa-fw): **Utterances** comment system supported by [Utterances](https://utteranc.es/)
 
-#### Extended Features
+### Daily Drivers
 
-* :(fa-solid fa-search fa-fw): **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
-* :(fa-regular fa-grin-tongue-wink fa-fw): **Twemoji** supported
-* :(fa-solid fa-code fa-fw): Automatically **highlighting** code
-* :(fa-regular fa-copy fa-fw): **Copy code** to clipboard with one click
-* :(fa-regular fa-images fa-fw): **Images gallery** supported by [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
-* :(fa-brands fa-font-awesome fa-fw): Extended Markdown syntax for **[Font Awesome](https://fontawesome.com/) icons**
-* :(fa-regular fa-sticky-note fa-fw): Extended Markdown syntax for **ruby annotation**
-* :(fa-solid fa-percentage fa-fw): Extended Markdown syntax for **fraction**
-* :(fa-solid fa-square-root-alt fa-fw): **Mathematical formula** supported by [$ \KaTeX $](https://katex.org/)
-* :(fa-solid fa-project-diagram fa-fw): **Diagrams** shortcode supported by [mermaid](https://github.com/knsv/mermaid)
-* :(fa-solid fa-chart-pie fa-fw): **Interactive data visualization** shortcode supported by [ECharts](https://echarts.apache.org/)
-* :(fa-solid fa-map-marked-alt fa-fw): **Mapbox** shortcode supported by [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
-* :(fa-solid fa-music fa-fw): **Music player** shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
-* :(fa-solid fa-video fa-fw): **Bilibili player** shortcode
-* :(fa-regular fa-bell fa-fw): Kinds of **admonitions** shortcode
-* :(fa-solid fa-align-left fa-fw): **Custom style** shortcode
-* :(fa-brands fa-js-square fa-fw): **Custom script** shortcode
-* :(fa-solid fa-i-cursor fa-fw): **Animated typing** supported by [TypeIt](https://typeitjs.com/)
-* :(fa-solid fa-cookie-bite fa-fw): **Cookie consent banner** supported by [cookieconsent](https://github.com/osano/cookieconsent)
-* ...
+* Phone:
+  
+  - Xiaomi 12 (cupid)
+  - ~~Poco X3 Pro (vayu)~~
+  - ~~Mi 8 (dipper)~~
+  - ~~Mi A1 (tissot)~~
 
-### License
+* Laptop:
+  
+  - CPU: 12th Gen Intel(R) Core(TM) i7-12700H
+  - GPU: NVIDIA GeForce RTX 3050
+  - Storage: 512 GB PCIe® NVMe™ TLC M.2 SSD
+  - RAM: Corsair Vengeance 32GB (2 x 16GB) DDR4 3200MHz CMSX32GX4M2A3200C22
 
-FeelIt is licensed under the **MIT** license.
 
-Check the [LICENSE file](https://github.com/khusika/FeelIt/blob/main/LICENSE) for details.
+### Daily Games
 
-Thanks to the authors of following resources included in the theme:
+Sometimes i play games on Android, below here are games that i often play:
 
-* [modern-normalize](https://github.com/sindresorhus/modern-normalize)
-* [Font Awesome](https://fontawesome.com/)
-* [Simple Icons](https://github.com/simple-icons/simple-icons)
-* [Animate.css](https://daneden.github.io/animate.css/)
-* [autocomplete.js](https://github.com/algolia/autocomplete.js)
-* [Lunr.js](https://lunrjs.com/)
-* [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
-* [lazysizes](https://github.com/aFarkas/lazysizes)
-* [object-fit-images](https://github.com/fregante/object-fit-images)
-* [Twemoji](https://github.com/twitter/twemoji)
-* [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)
-* [clipboard.js](https://github.com/zenorocha/clipboard.js)
-* [Sharer.js](https://github.com/ellisonleao/sharer.js)
-* [TypeIt](https://typeitjs.com/)
-* [$ \KaTeX $](https://katex.org/)
-* [mermaid](https://github.com/knsv/mermaid)
-* [ECharts](https://echarts.apache.org/)
-* [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js)
-* [APlayer](https://github.com/MoePlayer/APlayer)
-* [MetingJS](https://github.com/metowolf/MetingJS)
-* [Gitalk](https://github.com/gitalk/gitalk)
-* [Valine](https://valine.js.org/)
-* [Vssue](https://vssue.js.org/)
-* [cookieconsent](https://github.com/osano/cookieconsent)
+* [Bleach: Brave Souls](https://play.google.com/store/apps/details?id=com.klab.bleach)
+  
+  - ID: 75424574
+  - Server: Global
+
+* [Punishing: Gray Raven](https://play.google.com/store/apps/details?id=com.kurogame.gplay.punishing.grayraven.en)
+  
+  - ID: 11413118
+  - Server: Asia-Pacific
+
+* [Super Mecha Champions](https://play.google.com/store/apps/details?id=com.netease.g93na)
+  
+  - ID: ~~1582536~~_sold_
+  - Server: Asia
+
+---
+If you have any question related to my articles or projects, feel free too reach out to me via [e-mail](mailto:mail@khusika.dev) or [telegram](https://t.me/khusika).
