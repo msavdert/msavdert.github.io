@@ -62,14 +62,14 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
+#      [[languages.en.menu.main]]
+#        identifier = "documentation"
+#        pre = ""
+#        post = ""
+#        name = "Docs"
+#        url = "/categories/documentation/"
+#        title = ""
+#        weight = 4
       [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
@@ -232,13 +232,13 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
+#      [[languages.zh-cn.menu.main]]
+#        identifier = "documentation"
+#        pre = ""
+#        name = "文档"
+#        url = "/categories/documentation/"
+#        title = ""
+#        weight = 4
       [[languages.zh-cn.menu.main]]
         identifier = "about"
         pre = ""
@@ -399,14 +399,14 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
         url = "/categories/"
         title = ""
         weight = 3
-      [[languages.fr.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
+#      [[languages.fr.menu.main]]
+#        identifier = "documentation"
+#        pre = ""
+#        post = ""
+#        name = "Docs"
+#        url = "/categories/documentation/"
+#        title = ""
+#        weight = 4
       [[languages.fr.menu.main]]
         identifier = "about"
         pre = ""
@@ -539,7 +539,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # date format
-  dateFormat = "2006-01-02"
+  dateFormat = "02 Jan 2006"
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
   # whether to enable CSS and JS source mapping
@@ -597,7 +597,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
     # special amount of posts in each section page
     paginate = 20
     # date format (month and day)
-    dateFormat = "01-02"
+    dateFormat = "02 Jan 2006"
     # amount of RSS pages
     rss = 10
 
@@ -606,7 +606,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
     # special amount of posts in each list page
     paginate = 20
     # date format (month and day)
-    dateFormat = "01-02"
+    dateFormat = "02 Jan 2006"
     # amount of RSS pages
     rss = 10
 

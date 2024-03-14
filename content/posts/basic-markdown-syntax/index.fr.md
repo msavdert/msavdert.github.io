@@ -13,8 +13,7 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image-preview.webp"
 
-tags: ["Markdown", "HTML"]
-categories: ["Markdown"]
+tags: ["Markdown"]
 
 lightgallery: true
 ---
