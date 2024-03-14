@@ -16,7 +16,6 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 # UA-PROPERTY_ID or G-MEASUREMENT_ID google analytics code
-# UA-PROPERTY_ID 或者是 G-MEASUREMENT_ID 的 google analytics 代码
 googleAnalytics = "G-MKR8SZLP8T"
 
 ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstoken", "error-remote-getjson"]
@@ -84,7 +83,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
         pre = "<i class='fa-brands fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/khusika/FeelIt"
+        url = "https://github.com/msavdert/msavdert.github.io"
         title = "GitHub"
         weight = 6
     [languages.en.params]
@@ -95,7 +94,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "FeelIt"
+        title = "DBA Notes"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -565,7 +564,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
       # URL of the LOGO
       logo = ""
       # title name
-      name = "FeelIt"
+      name = "DBA Notes"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = "<i class='fa-solid fa-hand-holding-heart fa-fw'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -642,7 +641,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
     # whether to show link to Raw Markdown content of the content
     linkToMarkdown = true
     # whether to show link to improve the article
-    improveArticle = "https://github.com/khusika/FeelIt/edit/main/exampleSite/content/"
+    improveArticle = "https://github.com/msavdert/msavdert.github.io/edit/main/content/"
     # whether to show the full text content in RSS
     rssFullText = false
     # Table of the contents config
