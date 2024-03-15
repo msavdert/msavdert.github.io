@@ -7,12 +7,21 @@ draft: false
 author: "Melih Savdert"
 authorLink: "https://feelit.khusika.dev"
 description: "FeelIt theme provides multiple shortcodes on top of built-in ones in Hugo."
+resources:
+- name: "featured-image"
+  src: "https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo"
+- name: "featured-image-preview"
+  src: "https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo"
 
 tags: ["mssql", "sqlserver", "linux"]
 categories: ["SQL Server"]
 
 lightgallery: true
 ---
+
+In this quickstart, you install SQL Server 2022 (16.x) on Red Hat Enterprise Linux (RHEL) 8.x or 9.x. Then you can connect with sqlcmd to create your first database and run queries.
+
+<!--more-->
 
 ## Prerequisites
 You must have a RHEL 8.x machine with at least 2 GB of memory.
