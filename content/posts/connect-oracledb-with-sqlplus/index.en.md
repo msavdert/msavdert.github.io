@@ -14,7 +14,7 @@ resources:
   src: "featured-image.webp"
 
 tags: ["oracle", "sqlplus"]
-categories: ["Oracle]
+categories: ["Oracle"]
 
 lightgallery: true
 ---
