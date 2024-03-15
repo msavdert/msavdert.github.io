@@ -14,7 +14,6 @@ resources:
   src: "featured-image-preview.webp"
 
 tags: ["installation", "configuration"]
-categories: ["documentation"]
 
 lightgallery: true
 

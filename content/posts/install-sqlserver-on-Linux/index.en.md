@@ -11,7 +11,7 @@ resources:
 - name: "featured-image"
   src: "featured-image.webp"
 - name: "featured-image-preview"
-  src: "featured-image-preview.webp"
+  src: "featured-image.webp"
 
 tags: ["mssql", "sqlserver", "linux"]
 categories: ["SQL Server"]
