@@ -5,13 +5,13 @@ date: 2024-03-14T14:54:41+08:00
 #lastmod: 2020-03-03T16:29:41+08:00
 draft: false
 author: "Melih Savdert"
-authorLink: "https://feelit.khusika.dev"
-description: "FeelIt theme provides multiple shortcodes on top of built-in ones in Hugo."
+authorLink: "https://msavdert.github.io/"
+description: "Install SQL Server 2022 (16.x) on Red Hat Enterprise Linux (RHEL) 8.x or 9.x."
 resources:
 - name: "featured-image"
-  src: "https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo"
+  src: "featured-image.webp"
 - name: "featured-image-preview"
-  src: "https://unsplash.com/photos/macbook-pro-with-images-of-computer-language-codes-fPkvU7RDmCo"
+  src: "featured-image-preview.webp"
 
 tags: ["mssql", "sqlserver", "linux"]
 categories: ["SQL Server"]
