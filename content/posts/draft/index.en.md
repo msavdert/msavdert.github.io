@@ -24,3 +24,7 @@ In this quickstart, you install SQL Server 2022 (16.x) on Red Hat Enterprise Lin
 <!--more-->
 
 ## Prerequisites
+
+https://cloudconvert.com/webp-converter
+1600 × 840
+800 × 240
