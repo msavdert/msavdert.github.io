@@ -135,25 +135,25 @@ When you connect to your SQL Server instance using the sa account for the first 
 
 1. Create a new login, and make it a member of the sysadmin server role.
 
-![New Login](image-2.png)
+![New Login](image-2.png "New Login")
 
-![General](image-3.png)
+![General](image-3.png "General)
 
-![Server Roles](image-4.png)
+![Server Roles](image-4.png "Server Roles")
 
-![User Mapping](image-5.png)
+![User Mapping](image-5.png "User Mapping")
 
 2. Connect to the SQL Server instance using the new login you created.
 
-![alt text](image-6.png)
+![Connect to Server with New User](image-6.png "Connect to Server")
 
-![alt text](image-7.png)
+![Object Explorer with New User](image-7.png "Object Explorer")
 
 3. Disable the sa account, as recommended for security best practice.
 
-![alt text](image-8.png)
+![sa User Properties](image-8.png "sa User Properties")
 
-![alt text](image-9.png)
+![Disable sa User](image-9.png "Disable sa User")
 
 ## Install the SQL Server command-line tools
 
