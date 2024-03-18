@@ -1,11 +1,22 @@
 ---
+weight: 1
 title: "Install SQL Server 2022 on Red Hat 8/9"
-date: "2024-03-06"
-tags:
-  - sqlserver
-  - mssql
-  - linux
-toc: true
+date: 2024-03-14T14:54:41+08:00
+# lastmod: 2020-03-03T16:29:41+08:00
+draft: false
+author: "Melih Savdert"
+authorLink: "https://msavdert.github.io/"
+description: "Install SQL Server 2022 (16.x) on Red Hat Enterprise Linux (RHEL) 8.x or 9.x."
+resources:
+- name: "featured-image"
+  src: "featured-image.webp"
+- name: "featured-image-preview"
+  src: "featured-image.webp"
+
+tags: ["mssql", "sqlserver", "linux"]
+categories: ["SQL Server"]
+
+lightgallery: true
 ---
 
 ## Prerequisites
@@ -111,9 +122,9 @@ Mar 06 18:22:45 sqlsrv01-srv sqlservr[523]: [81B blob data]
 
 At this point, SQL Server is running on your RHEL machine and is ready to use!
 
-![Connect to Server](image.png)
+![Connect to Server](image.png "Connect to Server")
 
-![Object Explorer](image-1.png)
+![Object Explorer](image-1.png "Object Explorer")
 
 ## Disable the sa account as a best practice
 
