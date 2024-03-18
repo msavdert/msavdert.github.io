@@ -17,6 +17,9 @@ tags: ["mssql", "sqlserver", "linux"]
 categories: ["SQL Server"]
 
 lightgallery: true
+
+toc:
+  auto: false
 ---
 
 In this quickstart, you install SQL Server 2022 (16.x) on Red Hat Enterprise Linux (RHEL) 8.x or 9.x. Then you can connect with sqlcmd to create your first database and run queries.

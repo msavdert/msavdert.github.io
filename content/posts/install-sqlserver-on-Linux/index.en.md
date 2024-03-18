@@ -17,6 +17,9 @@ tags: ["mssql", "sqlserver", "linux"]
 categories: ["SQL Server"]
 
 lightgallery: true
+
+toc:
+  auto: false
 ---
 
 ## Prerequisites
