@@ -13,8 +13,8 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image.png"
 
-tags: ["mssql", "sqlserver", "linux"]
-categories: ["SQL Server"]
+tags: ["oracle", "patch&upgrade"]
+categories: ["Oracle"]
 
 lightgallery: true
 
@@ -26,7 +26,6 @@ You can change the architecture of an Oracle database from the non-CDB architect
 
 <!--more-->
 
-![[Pasted image 20240318121845.png]]
 ## Overview
 
 In the following database conversion, we have a 19c database (non-CDB) ORA19.
