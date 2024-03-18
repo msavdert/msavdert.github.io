@@ -128,7 +128,11 @@ exec DBMS_PDB.DESCRIBE(pdb_descr_file => '/tmp/ora19_manifest.xml');
 ```sql
 shut immediate
 ```
-> Note - From here, all steps will be performed on the Container database ORACDB
+
+{{< admonition note >}}
+From here, all steps will be performed on the Container database ORACDB
+{{< /admonition >}}
+
 ## Step 5 - Start dcdb database (container database) if not running
 ```sql
 startup
@@ -173,7 +177,10 @@ NAME       CAUSE           TYPE                 MESSAGE                         
 ---------- --------------- -------------------- -------------------------------------------------------------------------------- ---------
 ORA19      Non-CDB to PDB  WARNING              PDB plugged in is a non-CDB, requires noncdb_to_pdb.sql be run.                  PENDING
 ```
-> **Note:** If there are any errors, fix them before proceeding. I did not get any errors.
+
+{{< admonition note >}}
+If there are any errors, fix them before proceeding. I did not get any errors.
+{{< /admonition >}}
 
 ## Step 8 - Plug the ORA19 database into container ORACDB
 
@@ -190,7 +197,9 @@ SQL> show pdbs
          3 ORA19                          MOUNTED
 ```
 
-> **Note:** below are some other options that can also be used with the "create pluggable database".
+{{< admonition note >}}
+below are some other options that can also be used with the "create pluggable database".
+{{< /admonition >}}
 
 1. COPY - With this option, SNCDB will remain intact. All data files will remain untouched. For PDB files will be copied to the new location, provided with the parameter FILE_NAME_CONVERT.
 2. NOCOPY - Existing files will be used and after completion of the operation, SNCDB will not remain usable. As new PDB is using the same data files.
