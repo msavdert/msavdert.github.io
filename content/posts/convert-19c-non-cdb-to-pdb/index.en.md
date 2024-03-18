@@ -229,6 +229,8 @@ show pdbs
 
 [How to convert non-cdb 19c to CDB/PDB 19c database (linkedin.com)](https://www.linkedin.com/pulse/how-convert-non-cdb-19c-cdbpdb-database-ravi-chauhan)
 
+[Convert your 19c non-CDB to PDB in Oracle Cloud – Database Heartbeat (database-heartbeat.com)](https://database-heartbeat.com/2021/10/25/non-cdb-to-pdb/)
+
 Best-practice Order for Multiple Changes Involving nonCDB to PDB Migration (Doc ID 2534697.1)
 
 How to Convert Non-CDB to PDB - Step by Step Example (Doc ID 2288024.1)
