@@ -30,7 +30,11 @@ In this article, I will explain step by step how to connect remotely to a SQL Se
 
 To enable remote connection on SQL Server right – click on the server and select the Properties option. In the Server Properties dialog under the Connections tab check the **Allow remote connections to this server** option:
 
-![[Pasted image 20240321155156.png]]
+![Object Explorer](Pasted-image-20240321155156.png "Object Explorer")
+
+![Object Explorer](Pasted-image-20240321155156.png)
+
+![Pasted-image-20240321155156.png]
 
 ![[Pasted image 20240321155446.png]]
 
