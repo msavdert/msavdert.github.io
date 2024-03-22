@@ -26,7 +26,7 @@ You can change the architecture of an Oracle database from the non-CDB architect
 
 <!--more-->
 
-## Overview
+### Overview
 
 In the following database conversion, we have a 19c database (non-CDB) ORA19.
 
@@ -109,22 +109,28 @@ This manifest XML structure consists of the following details -
   ..
 </tablespace>
 ```
-## Step 1 - Perform clean shutdown at Non-CDB - sncdb
+
+### Step 1 - Perform clean shutdown at Non-CDB - sncdb
+
 ```bash
 export ORACLE_SID=ORA19
 
 sqlplus / as sysdba
 shut immediate
 ```
-## Step 2 - Start the Non-CDB sncdb database in READ ONLY mod
+### Step 2 - Start the Non-CDB sncdb database in READ ONLY mod
+
 ```sql
 startup open read only
 ```
-## Step 3 - Generate manifest XML file for ORA19 database
+### Step 3 - Generate manifest XML file for ORA19 database
+
 ```sql
 exec DBMS_PDB.DESCRIBE(pdb_descr_file => '/tmp/ora19_manifest.xml');
 ```
-## Step 4 - Shut down the ORA19 database
+
+### Step 4 - Shut down the ORA19 database
+
 ```sql
 shut immediate
 ```
@@ -133,11 +139,14 @@ shut immediate
 From here, all steps will be performed on the Container database ORACDB
 {{< /admonition >}}
 
-## Step 5 - Start dcdb database (container database) if not running
+### Step 5 - Start dcdb database (container database) if not running
+
 ```sql
 startup
 ```
-## Step 6 - Check ORA19 (non-container database) compatibility with ORACDB (container database)
+
+### Step 6 - Check ORA19 (non-container database) compatibility with ORACDB (container database)
+
 ```bash
 export ORACLE_SID=ORACDB
 ```
@@ -159,7 +168,9 @@ YES
 
 PL/SQL procedure successfully completed.
 ```
-## Step 7 - Check for any errors resulting from the above step
+
+### Step 7 - Check for any errors resulting from the above step
+
 ```sql
 col name for a10
 col cause for a15
@@ -182,7 +193,7 @@ ORA19      Non-CDB to PDB  WARNING              PDB plugged in is a non-CDB, req
 If there are any errors, fix them before proceeding. I did not get any errors.
 {{< /admonition >}}
 
-## Step 8 - Plug the ORA19 database into container ORACDB
+### Step 8 - Plug the ORA19 database into container ORACDB
 
 ```sql
 create pluggable database ORA19 using '/tmp/ora19_manifest.xml' NOCOPY tempfile reuse;
@@ -205,14 +216,14 @@ below are some other options that can also be used with the "create pluggable da
 2. NOCOPY - Existing files will be used and after completion of the operation, SNCDB will not remain usable. As new PDB is using the same data files.
 3. MOVE - using parameter FILE_NAME_CONVERT, existing datafiles will be moved to the new location, hence after the operation completion, SNCDB will not be usable.
 
-## Step 9 - Run the PDB conversion script provided by Oracle
+### Step 9 - Run the PDB conversion script provided by Oracle
 
 ```sql
 alter session set container=ORA19;
 @$ORACLE_HOME/rdbms/admin/noncdb_to_pdb.sql
 ```
 
-## Step 10 - Start PDB and verify the state
+### Step 10 - Start PDB and verify the state
 
 ```sql
 alter pluggable database open;
@@ -225,14 +236,11 @@ show pdbs
 ---------- ------------------------------ ---------- ----------
          3 ORA19                          READ WRITE NO
 ```
-## References
 
-[How to convert non-cdb 19c to CDB/PDB 19c database (linkedin.com)](https://www.linkedin.com/pulse/how-convert-non-cdb-19c-cdbpdb-database-ravi-chauhan)
+### References
 
-[Convert your 19c non-CDB to PDB in Oracle Cloud – Database Heartbeat (database-heartbeat.com)](https://database-heartbeat.com/2021/10/25/non-cdb-to-pdb/)
-
-Best-practice Order for Multiple Changes Involving nonCDB to PDB Migration (Doc ID 2534697.1)
-
-How to Convert Non-CDB to PDB - Step by Step Example (Doc ID 2288024.1)
-
-How to Convert Non-CDB to PDB Database on same local host machine in 12c - Testcase (Doc ID 2012448.1)
+- [How to convert non-cdb 19c to CDB/PDB 19c database](https://www.linkedin.com/pulse/how-convert-non-cdb-19c-cdbpdb-database-ravi-chauhan)
+- [Convert your 19c non-CDB to PDB in Oracle Cloud](https://database-heartbeat.com/2021/10/25/non-cdb-to-pdb/)
+- Best-practice Order for Multiple Changes Involving nonCDB to PDB Migration (Doc ID 2534697.1)
+- How to Convert Non-CDB to PDB - Step by Step Example (Doc ID 2288024.1)
+- How to Convert Non-CDB to PDB Database on same local host machine in 12c - Testcase (Doc ID 2012448.1)
