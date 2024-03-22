@@ -3,7 +3,7 @@ weight: 1
 title: "How to configure remote access to a SQL Server"
 date: 2024-03-22T12:48:41+08:00
 #lastmod: 2020-03-03T16:29:41+08:00
-draft: true
+draft: false
 author: "Melih Savdert"
 authorLink: "https://msavdert.github.io/"
 description: "How to connect remotely to a SQL Server"
