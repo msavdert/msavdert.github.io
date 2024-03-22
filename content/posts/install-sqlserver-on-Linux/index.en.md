@@ -125,7 +125,9 @@ Mar 06 18:22:45 sqlsrv01-srv sqlservr[523]: [81B blob data]
 
 At this point, SQL Server is running on your RHEL machine and is ready to use!
 
-![Connect to Server](image.png "Connect to Server")
+![Connect to Server](image.png)
+
+![Connect to Server](image.png "test")
 
 ![Object Explorer](image-1.png "Object Explorer")
 
@@ -137,7 +139,9 @@ When you connect to your SQL Server instance using the sa account for the first 
 
 ![New Login](image-2.png "New Login")
 
-![General](image-3.png "General)
+![New Login](image-2.png "New Login")
+
+![General](image-3.png "General")
 
 ![Server Roles](image-4.png "Server Roles")
 
