@@ -30,21 +30,17 @@ In this article, I will explain step by step how to connect remotely to a SQL Se
 
 To enable remote connection on SQL Server right – click on the server and select the Properties option. In the Server Properties dialog under the Connections tab check the **Allow remote connections to this server** option:
 
-![Object Explorer](Pasted image 20240321155156.png "Object Explorer")
+![object explorer](20240321155156.png)
 
-![Object Explorer](Pasted image 20240321155156.png)
-
-![Pasted-image-20240321155156.png]
-
-![[Pasted image 20240321155446.png]]
+![server properties](20240321155446.png)
 
 ## SQL Server Configuration Manager
 
 Make sure that TCP/IP protocol is enabled and right click on TCP/IP and select the Properties option.
 
-![[Pasted image 20240321155717.png]]
+![configuration manager](20240321155717.png)
 
-![[Pasted image 20240321155852.png]]
+![network configuration](20240321155852.png)
 
 ## Configure the Windows Firewall to allow SQL Server access
 
@@ -66,14 +62,14 @@ New-NetFirewallRule -DisplayName "SQLServer default instance" -Direction Inbound
 
 4. In Object Explorer, right-click your server, and then select **Restart**. If SQL Server Agent is running, it must also be restarted.
 
-![[Pasted image 20240321155156.png]]
+![object explorer properties](20240321155156.png)
 
-![[Pasted image 20240321160703.png]]
+![server properties security](20240321160703.png)
 
-![[Pasted image 20240321161146.png]]
+![sql server service restart](20240321161146.png)
 
 ## References:
 
-- https://knowledgebase.apexsql.com/configure-remote-access-connect-remote-sql-server-instance-apexsql-tools/
-- https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16
-- https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver16
+- [How to configure remote access and connect to a remote SQL Server instance](https://knowledgebase.apexsql.com/configure-remote-access-connect-remote-sql-server-instance-apexsql-tools/)
+- [Configure the Windows Firewall to allow SQL Server access](https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16)
+- [Change server authentication mode](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver16)
