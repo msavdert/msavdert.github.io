@@ -13,8 +13,8 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image.webp"
 
-categories: ["SQL Server", "SQL Server - Install and Upgrade"]
-tags: ["mssql", "sqlserver", "linux"]
+categories: ["SQL Server"]
+tags: ["sqlserver", "mssql", "sql server - install and upgrade"]
 
 lightgallery: true
 

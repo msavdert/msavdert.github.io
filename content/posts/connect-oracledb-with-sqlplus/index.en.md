@@ -13,7 +13,7 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image.webp"
 
-categories: ["Oracle", "Oracle - Administration"]
+categories: ["Oracle"]
 tags: ["oracle", "sqlplus", "clients for database administration"]
 
 lightgallery: true

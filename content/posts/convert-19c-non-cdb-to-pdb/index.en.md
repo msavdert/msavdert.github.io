@@ -13,8 +13,8 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image.png"
 
-tags: ["oracle", "upgrade"]
-categories: ["Oracle", "Oracle - Install and Upgrade"]
+categories: ["Oracle"]
+tags: ["oracle", "oracle - install and upgrade"]
 
 lightgallery: true
 
