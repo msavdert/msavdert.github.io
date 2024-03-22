@@ -13,8 +13,8 @@ resources:
 - name: "featured-image-preview"
   src: "featured-image.webp"
 
-tags: ["oracle", "sqlplus"]
-categories: ["Oracle"]
+categories: ["Oracle", "Oracle - Administration"]
+tags: ["oracle", "sqlplus", "clients for database administration"]
 
 lightgallery: true
 ---
