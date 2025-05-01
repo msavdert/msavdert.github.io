@@ -11,7 +11,8 @@ theme = [
   "cmpt-translate"
 ]
 defaultContentLanguage = "en"
-languageCode = "en"
+disableLanguages = ["tr"]
+#languageCode = "en"
 hasCJKLanguage = false
 enableRobotsTXT = true
 enableEmoji = true
@@ -25,11 +26,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # Multilingual config
 [languages]
   [languages.en]
+    weight = 1
     languageCode = "en"
     languageName = "English"
     hasCJKLanguage = false
 
   [languages.tr]
+    weight = 2
     languageCode = "tr"
     languageName = "Türkçe"
     hasCJKLanguage = false
