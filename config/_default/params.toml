@@ -6,9 +6,9 @@
 # FixIt 0.2.15 | CHANGED FixIt theme version
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "This is my new Hugo FixIt site"
+description = "Just DBA - Database Management Expertise for PostgreSQL and Oracle"
 # site keywords
-keywords = ["Hugo", "FixIt"]
+keywords = ["Database", "PostgreSQL", "Oracle", "DBA", "SQL"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -40,15 +40,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://github.com/Lruihao"
+  name = "Melih Savdert"
+  email = "msg911x@gmail.com"
+  link = "https://github.com/msavdert"
   avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
-  repo = ""
+  repo = "https://github.com/msavdert/msavdert.github.io"
   branch = "main"
   # the content directory path relative to the root of the repository
   dir = "content"
@@ -59,7 +59,7 @@ disableThemeInject = false
 # App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
-  title = "Hugo FixIt Blog"
+  title = "Just DBA"
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
@@ -115,11 +115,11 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/hugo-fixit-starter1/images/fixit.min.svg"
+    logo = ""
     # title name
-    name = ""
+    name = "Just DBA"
     # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+    pre = "<i class='fas fa-database fa-fw' aria-hidden='true'></i>"
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     # whether to use typeit animation for title name
@@ -127,9 +127,9 @@ disableThemeInject = false
   # FixIt 0.2.12 | NEW Header subtitle config
   [header.subtitle]
     # subtitle name
-    name = ""
+    name = "Database Management Expertise"
     # whether to use typeit animation for subtitle name
-    typeit = false
+    typeit = true
 
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
@@ -155,7 +155,7 @@ disableThemeInject = false
   # whether to show the author
   author = true
   # Site creation year
-  since = 2021
+  since = 2024
   # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
@@ -243,15 +243,15 @@ disableThemeInject = false
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = ""
     # title shown in home page (HTML format is supported)
-    title = ""
+    title = "Just DBA"
     # subtitle shown in home page (HTML format is supported)
-    subtitle = "This is my new Hugo FixIt site"
+    subtitle = "Database Management Expertise for PostgreSQL and Oracle"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
     social = true
     # disclaimer (HTML format is supported)
-    disclaimer = ""
+    disclaimer = "Your reliable source for database management solutions"
   # Home page posts
   [home.posts]
     enable = true
@@ -260,10 +260,10 @@ disableThemeInject = false
 
 # FixIt 0.2.16 | CHANGED Social config about the author
 [social]
-  GitHub = ""
-  Linkedin = ""
-  Twitter = ""
-  Instagram = ""
+  GitHub = "msavdert"
+  Linkedin = "melihsavdert"
+  Twitter = "melihsavdert"
+  Instagram = "melihsavdert"
   Facebook = ""
   Telegram = ""
   Medium = ""
@@ -731,12 +731,12 @@ disableThemeInject = false
     enable = true
     Twitter = true
     Facebook = true
-    Linkedin = false
-    Whatsapp = false
+    Linkedin = true
+    Whatsapp = true
     Pinterest = false
     Tumblr = false
     HackerNews = false
-    Reddit = false
+    Reddit = true
     VK = false
     Buffer = false
     Xing = false
@@ -755,7 +755,7 @@ disableThemeInject = false
     Mix = false
   # FixIt 0.2.15 | CHANGED Comment config
   [page.comment]
-    enable = false
+    enable = true
     # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
     [page.comment.artalk]
       enable = false
@@ -879,19 +879,19 @@ disableThemeInject = false
       katex = false
     # FixIt 0.2.14 | NEW Giscus comments config
     [page.comment.giscus]
-      enable = false
-      repo = ""
-      repoId = ""
-      category = ""
-      categoryId = ""
-      mapping = ""
+      enable = true
+      repo = "msavdert/msavdert.github.io"
+      repoId = "R_kgDOOipdeA"
+      category = "General"
+      categoryId = "DIC_kwDOOipdeM4Cpp0N"
+      mapping = "pathname"
       origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
       strict = "0" # FixIt NEW | 0.2.18
       term = ""
       reactionsEnabled = "1"
       emitMetadata = "0"
       inputPosition = "bottom" # ["top", "bottom"]
-      lang = ""
+      lang = "en"
       lightTheme = "light"
       darkTheme = "dark"
       lazyLoad = true

@@ -3,7 +3,7 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
+title = "Just DBA"
 baseURL = "https://msavdert.github.io/"
 theme = [
   "FixIt",
