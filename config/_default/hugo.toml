@@ -4,14 +4,14 @@
 # -------------------------------------------------------------------------------------
 
 title = "Hugo FixIt Blog"
-baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter1/"
+baseURL = "https://msavdert.github.io/"
 theme = [
   "FixIt",
   "shortcode-docs-bookmark"
 ]
 defaultContentLanguage = "en"
 languageCode = "en"
-hasCJKLanguage = true
+hasCJKLanguage = false
 enableRobotsTXT = true
 enableEmoji = true
 enableGitInfo = true
