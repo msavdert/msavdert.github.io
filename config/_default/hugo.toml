@@ -23,11 +23,6 @@ summaryLength = 150
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 
-[languages]
-[languages.en]
-languageCode = "en"
-languageName = "English"
-
 # Multilingual config
 [languages]
   [languages.en]
