@@ -14,7 +14,7 @@ categories:
   - Databases
 resources:
   - name: featured-image-preview
-    src: ./featured-image-preview.png
+    src: featured-image-preview.png
 ---
 
 # Introduction
