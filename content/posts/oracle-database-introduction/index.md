@@ -5,13 +5,10 @@ date: 2025-05-01T00:00:00Z
 description: "A detailed introduction to Oracle Database, including its founders, origin story, major milestones, use cases, and a comparison with other major database systems."
 keywords: ["Oracle", "Database", "RDBMS", "History", "Comparison", "Enterprise"]
 tags:
-  - Oracle
-  - Database
-  - RDBMS
-  - History
-  - Comparison
+  - oracle
+  - introduction
 categories:
-  - Databases
+  - Oracle
 resources:
   - name: featured-image-preview
     src: featured-image-preview.png

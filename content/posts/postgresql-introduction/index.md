@@ -5,7 +5,8 @@ date: 2025-05-01T00:10:00Z
 description: "A detailed introduction to PostgreSQL, including its academic roots, key contributors, major milestones, use cases, and a comparison with other major database systems."
 keywords: ["PostgreSQL", "Postgres", "Database", "RDBMS", "History", "Comparison", "Open Source"]
 tags:
-  - PostgreSQL
+  - postgresql
+  - introduction
 categories:
   - PostgreSQL
 resources:
