@@ -17,6 +17,8 @@ resources:
 
 PostgreSQL, often called "Postgres," is a powerful, open-source object-relational database system with a strong reputation for reliability, feature robustness, and performance. It is widely regarded as the world's most advanced open-source RDBMS.
 
+<!--more-->
+
 # Founders and Origin Story
 
 PostgreSQL's story begins at the University of California, Berkeley, in the late 1970s. Professor Michael Stonebraker and his team developed the Ingres project, one of the earliest relational databases. After Ingres, Stonebraker started the POSTGRES project in 1986 to address limitations of the relational model and to support complex data types and extensibility.

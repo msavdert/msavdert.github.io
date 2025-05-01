@@ -21,6 +21,8 @@ resources:
 
 Oracle Database is one of the most prominent and widely used relational database management systems (RDBMS) in the world. Known for its robustness, scalability, and enterprise-grade features, Oracle has played a pivotal role in the evolution of data management.
 
+<!--more-->
+
 # Founders and Origin Story
 
 Oracle was founded in 1977 by Larry Ellison, Bob Miner, and Ed Oates in Santa Clara, California. The company was originally named Software Development Laboratories (SDL). The inspiration for Oracle came from a research paper by Edgar F. Codd on the relational model for databases, published by IBM. Larry Ellison saw the commercial potential of Codd's ideas, especially since IBM was slow to bring a product to market.
