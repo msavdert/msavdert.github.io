@@ -9,8 +9,8 @@ tags:
 categories:
   - PostgreSQL
 resources:
-  - name: featured-image
-    src: "featured-image.png"
+  - name: featured-image-preview
+    src: featured-image-preview.png
 ---
 
 # Introduction
