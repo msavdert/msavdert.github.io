@@ -22,13 +22,14 @@ summaryLength = 150
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
-
 # Multilingual config
 [languages]
   [languages.en]
     languageCode = "en"
     languageName = "English"
+    hasCJKLanguage = false
 
   [languages.tr]
-    languageCode = "en"
-    languageName = "English"
+    languageCode = "tr"
+    languageName = "Türkçe"
+    hasCJKLanguage = false
