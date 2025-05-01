@@ -14,19 +14,19 @@ resources:
     src: featured-image-preview.png
 ---
 
-# Introduction
+## Introduction
 
 PostgreSQL, often called "Postgres," is a powerful, open-source object-relational database system with a strong reputation for reliability, feature robustness, and performance. It is widely regarded as the world's most advanced open-source RDBMS.
 
 <!--more-->
 
-# Founders and Origin Story
+## Founders and Origin Story
 
 PostgreSQL's story begins at the University of California, Berkeley, in the late 1970s. Professor Michael Stonebraker and his team developed the Ingres project, one of the earliest relational databases. After Ingres, Stonebraker started the POSTGRES project in 1986 to address limitations of the relational model and to support complex data types and extensibility.
 
 Key contributors included Michael Stonebraker, Eugene Wong, and a team of graduate students. In 1994, Andrew Yu and Jolly Chen added SQL support, releasing Postgres95. The project was renamed PostgreSQL in 1996 to reflect its support for SQL and its POSTGRES heritage.
 
-# Key Milestones
+## Key Milestones
 
 - **1977-1985:** Ingres project lays the foundation for relational databases.
 - **1986:** POSTGRES project begins at UC Berkeley.
@@ -37,13 +37,13 @@ Key contributors included Michael Stonebraker, Eugene Wong, and a team of gradua
 - **2010s:** JSON/JSONB support, logical replication, parallel query, and improved performance.
 - **2020s:** Continued innovation with partitioning, native logical replication, and cloud-native features.
 
-# Architecture and Core Features
+## Architecture and Core Features
 
 PostgreSQL is known for its process-based architecture, MVCC (Multi-Version Concurrency Control), extensibility, and standards compliance. It supports a wide range of data types, advanced indexing, and procedural languages (PL/pgSQL, PL/Python, etc.).
 
-# Example: Basic SQL and PL/pgSQL in PostgreSQL
+## Example: Basic SQL and PL/pgSQL in PostgreSQL
 
-## Creating a Table
+### Creating a Table
 ```sql
 CREATE TABLE employees (
   employee_id SERIAL PRIMARY KEY,
@@ -54,7 +54,7 @@ CREATE TABLE employees (
 );
 ```
 
-## DML Operations
+### DML Operations
 ```sql
 INSERT INTO employees (first_name, last_name, hire_date, salary)
 VALUES ('Jane', 'Smith', CURRENT_DATE, 4200.00);
@@ -64,7 +64,7 @@ UPDATE employees SET salary = 4500.00 WHERE employee_id = 1;
 DELETE FROM employees WHERE employee_id = 1;
 ```
 
-## PL/pgSQL Example
+### PL/pgSQL Example
 ```sql
 DO $$
 DECLARE
@@ -76,7 +76,7 @@ END
 $$;
 ```
 
-# Use Cases
+## Use Cases
 
 PostgreSQL is widely used in:
 - Web applications (startups to large-scale sites)
@@ -85,9 +85,9 @@ PostgreSQL is widely used in:
 - Scientific and research databases
 - General-purpose OLTP systems
 
-# Comparison with Other Databases
+## Comparison with Other Databases
 
-## PostgreSQL vs. Oracle
+### PostgreSQL vs. Oracle
 - **Licensing:** PostgreSQL is open-source and free; Oracle is commercial and closed-source.
 - **Extensibility:** PostgreSQL is highly extensible (custom types, functions, extensions like PostGIS); Oracle is extensible but more controlled.
 - **Procedural Languages:** PostgreSQL uses PL/pgSQL; Oracle uses PL/SQL (very similar syntax, but some differences in features and integration).
@@ -95,20 +95,20 @@ PostgreSQL is widely used in:
 - **Replication:** PostgreSQL offers streaming and logical replication; Oracle's Data Guard and GoldenGate are enterprise-grade.
 - **Cloud:** Both are available as managed services (AWS RDS for PostgreSQL, Google Cloud SQL, Oracle Cloud, etc.).
 
-## PostgreSQL vs. MySQL
+### PostgreSQL vs. MySQL
 - **Features:** PostgreSQL offers more advanced features (e.g., full ACID compliance, extensibility, advanced indexing, window functions).
 - **Standards Compliance:** PostgreSQL is more SQL-compliant.
 - **Use Cases:** MySQL is often chosen for web applications; PostgreSQL is preferred for complex, data-intensive applications.
 
-## PostgreSQL vs. Microsoft SQL Server
+### PostgreSQL vs. Microsoft SQL Server
 - **Platform:** PostgreSQL is cross-platform and open-source; SQL Server is commercial and was traditionally Windows-centric (now also on Linux).
 - **Procedural Language:** SQL Server uses T-SQL; PostgreSQL uses PL/pgSQL.
 - **Extensibility:** PostgreSQL is more extensible.
 
-# Conclusion
+## Conclusion
 
 PostgreSQL's evolution from an academic project to a global open-source leader is marked by technical excellence, community collaboration, and a commitment to standards. Its flexibility, reliability, and rich feature set make it a top choice for a wide range of applications.
 
-# Further Reading
+## Further Reading
 - [PostgreSQL Official Documentation](https://www.postgresql.org/docs/)
 - [PostgreSQL vs. Oracle Feature Comparison](https://www.enterprisedb.com/)
