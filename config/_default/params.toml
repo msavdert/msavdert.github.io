@@ -649,7 +649,7 @@ disableThemeInject = false
     position = "right"
     # FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
     ordered = true
-    startLevel = 2
+    startLevel = 1
     endLevel = 6
   # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
   [page.expirationReminder]
@@ -723,7 +723,7 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = false
+    enable = true
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]

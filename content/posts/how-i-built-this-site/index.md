@@ -10,8 +10,8 @@ tags:
 categories:
   - General
 resources:
-  - name: featured-image-preview
-    src: featured-image-preview.png
+  - name: featured-image
+    src: featured-image.webp
 ---
 
 # Introduction
