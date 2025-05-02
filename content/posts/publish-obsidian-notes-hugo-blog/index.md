@@ -25,8 +25,6 @@ If you want to write your blog posts in [Obsidian](https://obsidian.md/) using M
 
 <!--more-->
 
----
-
 ## Overview
 
 - **Write** your posts in Obsidian (Markdown).
@@ -34,26 +32,20 @@ If you want to write your blog posts in [Obsidian](https://obsidian.md/) using M
 - **Automate** publishing: A GitHub Actions workflow copies your posts from your private repo to your public Hugo website repo.
 - **Publish**: Your Hugo site (with the [FixIt theme](https://github.com/hugo-fixit/FixIt)) is updated automatically.
 
----
-
 ## Prerequisites
 
 - A **private GitHub repo** for your Obsidian notes (e.g., `msavdert/obsidian-git-backup`).
 - A **public GitHub repo** for your Hugo site (e.g., `msavdert/msavdert.github.io`), set up with the [hugo-fixit](https://github.com/hugo-fixit/FixIt) theme.
 - [Obsidian Git plugin](https://github.com/denolehov/obsidian-git) installed in your Obsidian vault.
 
----
-
 ## Step 1: Create a Personal Access Token (PAT)
 
 You need a GitHub Personal Access Token to allow your workflow to push changes to your public repo.
 
-1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens).
+1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/personal-access-tokens).
 2. Click **"Generate new token"**.
 3. Select the `repo` scope.
 4. Copy the token (PAT) and **save it securely**.
-
----
 
 ## Step 2: Add the PAT as a Secret in Your Private Repo
 
@@ -64,8 +56,6 @@ You need a GitHub Personal Access Token to allow your workflow to push changes t
 5. Paste your PAT and save.
 
 > **Note:** The secret must be added to the *private* repo, as the workflow will run there.
-
----
 
 ## Step 3: Create the GitHub Actions Workflow
 
@@ -128,8 +118,6 @@ jobs:
 - **Sync:** Uses `rsync` to copy everything from `Blog/` to posts in your public Hugo repo.
 - **Commit & Push:** Commits and pushes only if there are changes.
 
----
-
 ## Step 4: Write Your Blog Posts in Obsidian
 
 Organize your posts in your Obsidian vault like this:
@@ -163,23 +151,17 @@ draft: false
 - Place each post in its own folder under `Blog/`.
 - Images or attachments go in the same folder.
 
----
-
 ## Step 5: Push Your Notes and Publish
 
 1. Use the **Obsidian Git plugin** to commit and push your changes to your private repo.
 2. The GitHub Actions workflow will automatically copy your posts to your public Hugo repo.
 3. Your Hugo site (with the [FixIt theme](https://github.com/hugo-fixit/FixIt)) will be updated and published via GitHub Pages.
 
----
-
 ## References
 
 - [how-i-built-this-site/](https://github.com/msavdert/msavdert.github.io/blob/main/how-i-built-this-site/index.md)
 - [Hugo FixIt Theme](https://github.com/hugo-fixit/FixIt)
 - [Obsidian Git Plugin](https://github.com/denolehov/obsidian-git)
-
----
 
 With this setup, you can write in Obsidian and publish to your Hugo blog with a simple git push!
 
