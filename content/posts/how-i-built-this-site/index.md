@@ -4,13 +4,13 @@ subtitle: Building a Modern Multilingual Blog with Hugo, FixIt, and GitHub Pages
 description: A step-by-step guide on how I built my Just DBA blog using Hugo, the FixIt theme, GitHub Pages, and various customizations.
 date: 2025-05-02T00:52:04-04:00
 keywords:
-  - Hugo
-  - FixIt
-  - GitHub Pages
-  - Blog
-  - Multilingual
-  - Database
-  - Setup
+  - hugo
+  - fixit
+  - github pages
+  - blog
+  - multilingual
+  - database
+  - setup
 tags:
   - Hugo
   - FixIt

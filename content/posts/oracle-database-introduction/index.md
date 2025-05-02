@@ -4,12 +4,12 @@ subtitle: History, Founders, Milestones, Use Cases, and Comparisons
 description: A detailed introduction to Oracle Database, including its founders, origin story, major milestones, use cases, and a comparison with other major database systems.
 date: 2025-05-02T00:30:50-04:00
 keywords:
-  - Oracle
-  - Database
   - RDBMS
-  - History
-  - Comparison
-  - Enterprise
+  - oracle
+  - database
+  - history
+  - comparison
+  - enterprise
 tags:
   - oracle
   - introduction

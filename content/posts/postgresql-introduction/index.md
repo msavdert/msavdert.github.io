@@ -4,13 +4,13 @@ subtitle: History, Founders, Milestones, Use Cases, and Comparisons
 description: A detailed introduction to PostgreSQL, including its academic roots, key contributors, major milestones, use cases, and a comparison with other major database systems.
 date: 2025-05-02T01:02:29-04:00
 keywords:
-  - PostgreSQL
-  - Postgres
-  - Database
   - RDBMS
-  - History
-  - Comparison
-  - Open Source
+  - postgresql
+  - postgres
+  - database
+  - history
+  - comparison
+  - open source
 tags:
   - postgresql
   - introduction
