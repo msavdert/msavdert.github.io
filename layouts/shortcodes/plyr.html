@@ -1,0 +1,31 @@
+{{ $id := .Get "id" }}
+{{ $type := .Get "type" | default "youtube" }}
+{{ $autoplay := .Get "autoplay" | default "false" }}
+{{ $poster := .Get "poster" | default "" }}
+{{ $class := .Get "class" | default "plyr-player" }}
+
+<div class="{{ $class }}" data-type="{{ $type }}">
+    {{- if eq $type "youtube" -}}
+    <div class="plyr__video-embed">
+        <iframe
+            src="https://www.youtube.com/embed/{{ $id }}?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+        ></iframe>
+    </div>
+    {{- else if eq $type "vimeo" -}}
+    <div class="plyr__video-embed">
+        <iframe
+            src="https://player.vimeo.com/video/{{ $id }}?loop=false&byline=false&portrait=false&title=false&speed=true&transparent=0&gesture=media"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+        ></iframe>
+    </div>
+    {{- else -}}
+    <video controls {{ if eq $autoplay "true" }}autoplay{{ end }} {{ if ne $poster "" }}poster="{{ $poster }}"{{ end }}>
+        <source src="{{ $id }}" type="video/mp4" />
+    </video>
+    {{- end -}}
+</div>

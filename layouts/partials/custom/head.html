@@ -3,3 +3,19 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
+
+<!-- Plyr Video Player CSS ve JS -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const players = Plyr.setup('.plyr-player video, .plyr__video-embed');
+    });
+</script>
+
+<!-- Plyr özel stil ayarları -->
+<style>
+    :root {
+        --plyr-color-main: #0077CC;
+    }
+</style>
