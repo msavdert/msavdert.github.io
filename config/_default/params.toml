@@ -219,7 +219,7 @@ disableThemeInject = false
 [recentlyUpdated]
   archives = true
   section = false
-  list = true
+  list = false
   days = 30
   maxCount = 10
 
