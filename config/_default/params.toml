@@ -218,7 +218,7 @@ disableThemeInject = false
 # FixIt 0.3.13 | NEW recently updated pages config for archives, section and term list
 [recentlyUpdated]
   archives = true
-  section = true
+  section = false
   list = true
   days = 30
   maxCount = 10
