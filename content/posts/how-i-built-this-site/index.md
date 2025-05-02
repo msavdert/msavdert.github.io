@@ -22,7 +22,7 @@ draft: false
 
 # Introduction
 
-This post documents the process of building my personal blog, **Just DBA**, which focuses on database management for PostgreSQL and Oracle. The site is built with [Hugo](https://gohugo.io/), uses the [FixIt theme](https://github.com/hugo-fixit/FixIt), and is hosted on GitHub Pages. Below, I share the steps, tools, and customizations involved..
+This post documents the process of building my personal blog, **Just DBA**, which focuses on database management for PostgreSQL and Oracle. The site is built with [Hugo](https://gohugo.io/), uses the [FixIt theme](https://github.com/hugo-fixit/FixIt), and is hosted on GitHub Pages. Below, I share the steps, tools, and customizations involved.
 
 <!--more-->
 
