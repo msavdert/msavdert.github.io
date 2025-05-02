@@ -52,7 +52,7 @@ You can use the shortcode we've created to add the Plyr video player to your sit
 
 ### 1. For YouTube Videos
 
-```go
+```
 {{</* plyr id="bTqVqk7FSmY" type="youtube" */>}}
 ```
 
@@ -62,7 +62,7 @@ Result:
 
 ### 2. For Vimeo Videos
 
-```go
+```
 {{</* plyr id="76979871" type="vimeo" loop="true" */>}}
 ```
 
@@ -72,13 +72,13 @@ Result:
 
 ### 3. For Local MP4/MOV Videos
 
-```go
+```
 {{</* plyr id="/videos/my-video.mp4" type="video" poster="poster.jpg" autoplay="true" */>}}
 ```
 
 Simple local video example:
 
-```go
+```
 {{</* plyr id="migration-demo.mov" type="video" */>}}
 ```
 
@@ -92,7 +92,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### With Subtitles/Captions
 
-```go
+```
 {{</* plyr 
   id="migration-demo.mov" 
   type="video" 
@@ -104,7 +104,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### Multiple Video Quality Options
 
-```go
+```
 {{</* plyr 
   id="high-quality.mp4,medium-quality.mp4,low-quality.mp4" 
   type="video" 
@@ -114,7 +114,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### Video Chapters
 
-```go
+```
 {{</* plyr 
   id="migration-demo.mov" 
   type="video" 
@@ -124,7 +124,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### With Preview Thumbnails
 
-```go
+```
 {{</* plyr 
   id="migration-demo.mov" 
   type="video" 
@@ -134,7 +134,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### Multiple Tracks (Subtitles, Descriptions)
 
-```go
+```
 {{</* plyr 
   id="migration-demo.mov" 
   type="video"
@@ -147,7 +147,7 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### With Custom Content
 
-```go
+```
 {{</* plyr id="migration-demo.mov" type="video" */>}}
 **Video Title**: Database Migration Demo
 *Recorded on May 1, 2025*
