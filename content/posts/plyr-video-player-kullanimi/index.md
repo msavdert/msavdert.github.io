@@ -58,7 +58,7 @@ You can use the shortcode we've created to add the Plyr video player to your sit
 
 Result:
 
-{{< plyr id="bTqVqk7FSmY" type="youtube" >}}
+{{< plyr id="bTqVqk7FSmY" type="youtube" />}}
 
 ### 2. For Vimeo Videos
 
@@ -68,7 +68,7 @@ Result:
 
 Result:
 
-{{< plyr id="76979871" type="vimeo" loop="true" >}}
+{{< plyr id="76979871" type="vimeo" loop="true" />}}
 
 ### 3. For Local MP4/MOV Videos
 
@@ -84,7 +84,7 @@ Simple local video example:
 
 Result:
 
-{{< plyr id="migration-demo.mov" type="video" >}}
+{{< plyr id="migration-demo.mov" type="video" />}}
 
 ## Advanced Features
 
