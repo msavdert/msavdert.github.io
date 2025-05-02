@@ -1,4 +1,25 @@
-# Just DBA – Hugo Blog with FixIt Theme
+
+<p align="center">
+  <a href="https://msavdert.github.io"><img src="https://raw.githubusercontent.com/msavdert/msavdert.github.io/57854e3f1458c6ca13bdd7bb602f3c35f85e21ce/static/favicon.svg" alt="Logo" height=170></a>
+</p>
+
+<h1 align="center">Just DBA</h1>
+
+<p align="center"><a href="https://msavdert.github.io/">msavdert.github.io</a></p>
+
+<div align="center">
+
+[![License](https://img.shields.io/github/license/msavdert/msavdert.github.io)](https://github.com/msavdert/msavdert.github.io/blob/main/LICENSE)
+[![Twitter Follow](https://img.shields.io/twitter/follow/msavdert)](https://x.com/melihsavdert)
+[![GitHub stars](https://img.shields.io/github/stars/msavdert/msavdert.github.io)](https://github.com/msavdert/msavdert.github.io)
+
+</div>
+
+<div align="center">
+
+<b>Just DBA – Hugo Blog with FixIt Theme</b>
+
+</div>
 
 This is a personal blog focused on database management (PostgreSQL, Oracle, and more), built with [Hugo](https://gohugo.io/) and the [FixIt](https://github.com/hugo-fixit/FixIt) theme. The site is deployed via GitHub Pages and supports multilingual content and automatic translation.
 
