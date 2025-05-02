@@ -147,8 +147,6 @@ Our enhanced Plyr shortcode supports many advanced features:
 
 ### With Custom Content
 
-You can add additional information below the video:
-
 ```go
 {{</* plyr id="migration-demo.mov" type="video" */>}}
 **Video Title**: Database Migration Demo
