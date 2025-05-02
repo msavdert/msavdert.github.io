@@ -17,7 +17,7 @@ tags:
 categories: PostgreSQL
 featuredImage: ""
 featuredImagePreview: featured-image-preview.png
-draft: false
+draft: true
 ---
 
 ## Introduction
