@@ -177,7 +177,9 @@ I'm here! Hello everyone, this is my blog site where I will share technical info
 
 ````
 
-![Alt text](hello-world.webp "Hello World!")
+![](hello-world.webp "Hello World!")
+
+[Click here to visit][hello-world]
 
 ## Step 5: Push Your Notes and Publish
 
@@ -196,4 +198,5 @@ With this setup, you can write in Obsidian and publish to your Hugo blog with a 
 <!-- link reference definition -->
 <!-- markdownlint-disable-file MD052 -->
 [how-i-built-this-site]: {{< relref "/posts/how-i-built-this-site" >}}
+[hello-world]: {{< relref "/posts/hello-world" >}}
 [caniuse]: https://caniuse.com/

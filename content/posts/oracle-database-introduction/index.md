@@ -15,7 +15,7 @@ tags:
   - introduction
 categories: Oracle
 featuredImage: ""
-featuredImagePreview: featured-image-preview.png
+featuredImagePreview: featured-image-preview.webp
 draft: false
 ---
 
