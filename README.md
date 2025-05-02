@@ -1,120 +1,79 @@
-# Hugo FixIt 博客模板（Git）
+# Just DBA – Hugo Blog with FixIt Theme
 
-👉 中文 | [English](README.en.md)
+This is a personal blog focused on database management (PostgreSQL, Oracle, and more), built with [Hugo](https://gohugo.io/) and the [FixIt](https://github.com/hugo-fixit/FixIt) theme. The site is deployed via GitHub Pages and supports multilingual content and automatic translation.
 
-这是 Hugo 主题 [FixIt](https://github.com/hugo-fixit/FixIt) 的快速启动模板。它使用 [Git 子模块](https://git-scm.com/book/en/v2/Git-Tools-Submodules) 功能来加载主题。如果你更熟悉 Go，可以 [查看这个模板](https://github.com/hugo-fixit/hugo-fixit-starter)。
+## Directory Structure
 
-它提供了基本的主题结构和配置。已经设置了 GitHub Actions，可以自动部署博客到 GitHub Pages。此外，还有一个定时任务，每天自动更新主题。
-
-## 目录结构
-
-```bash
-▸ .github/       # GitHub configuration
-▸ archetypes/    # page archetypes (like scaffolds of archetypes)
-▸ assets/        # css, js, third-party libraries etc.
-▸ config/        # configuration files
-▸ content/       # markdown files for hugo project
-▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
-▸ public/        # build directory
-▸ static/        # static files, e.g. favicon.ico
-▸ themes/        # theme submodules
+```
+archetypes/    # Page archetypes (scaffolds)
+assets/        # CSS, JS, images, etc.
+config/        # Hugo configuration files
+content/       # Blog posts and pages (Markdown)
+static/        # Static files (favicon, manifest, etc.)
+themes/        # Theme submodules (FixIt, cmpt-translate, etc.)
 ```
 
-## 快速入门
+## Features
 
-完整的快速入门请参阅此 [页面](https://fixit.lruihao.cn/documentation/getting-started/)。
+- Clean, responsive, and modern design
+- Light/Dark mode support
+- Multilingual and automatic translation (via cmpt-translate)
+- SEO optimized and fast performance
+- Social links and comment systems (Giscus, Disqus, etc.)
+- Table of contents, code highlighting, and sharing options
+- Easy deployment to GitHub Pages
 
-### 准备
+## Quick Start
 
-[Hugo](https://gohugo.io/installation/): >= 0.132.0 (extended version)
+### Prerequisites
 
-### 使用此模板
+- [Hugo](https://gohugo.io/installation/) v0.132.0 or later (extended version)
+- [Git](https://git-scm.com/)
 
-#### CLI
+### Clone the Repository
 
 ```bash
-npx fixit-cli create my-blog
+git clone --recursive https://github.com/msavdert/msavdert.github.io
+cd msavdert.github.io
 ```
 
-#### 手动
-
-1. 点击 [**Use this template**](https://github.com/hugo-fixit/hugo-fixit-starter1/generate)，在 GitHub 上创建你的仓库。
-
-    <img width="913" alt="image" src="https://github.com/hugo-fixit/hugo-fixit-starter1/assets/33419593/d5fbd940-3ffd-4750-b1e6-4e87b50b0696">
-
-2. 仓库创建后，只需克隆并开始使用！
-
-    ```bash
-    # 使用你自己的仓库 URL 进行克隆
-    git clone --recursive https://github.com/<your_name>/<your_blog_repo>.git
-    ```
-
-> [!TIP]
-> 仓库名决定了你的 GitHub Pages URL，例如：
->
-> | 仓库名 | GitHub Pages |
-> | :--- | :--- |
-> | `<your_name>.github.io` | `https://<your_name>.github.io/` |
-> | `blog` | `https://<your_name>.github.io/blog/` |
-
-### 启动站点
+### Run Locally
 
 ```bash
-# 开发环境
 hugo server
-# 生产环境
-hugo server -e production
 ```
 
-### 构建站点
+Visit `http://localhost:1313` in your browser.
 
-当你的站点准备部署时，运行以下命令：
+### Build for Production
 
 ```bash
 hugo
 ```
 
-### 部署到 GitHub Pages
+### Deploy to GitHub Pages
 
-> [!NOTE]
-> 聪明的你可能已经注意到，模板初始化后的第一次 GitHub Actions 自动部署失败了。这是因为你还没有配置 Workflow 权限和 GitHub Pages。
+1. Configure GitHub Actions and Pages as described in the [FixIt documentation](https://fixit.lruihao.cn/documentation/getting-started/).
+2. Set the `baseURL` in hugo.toml to your site URL.
+3. Push changes to the `main` branch; deployment is automatic.
 
-1. 转到 Setting => Actions => General => Workflow permissions => 选中 "Read and write permissions"。
-2. GitHub Pages 设置：Setting => Pages => Source: GitHub Actions。
-3. 修改 `config/_default/hugo.toml` 文件中的 `baseURL` 为你的站点 URL。
-4. 提交上一步的修改到 `main` 分支，GitHub Actions 将自动打包并部署站点到 GitHub Pages。
+## Theme and Customization
 
-### 更新主题
+- Main theme: [FixIt](https://github.com/hugo-fixit/FixIt)
+- Automatic translation: [cmpt-translate](https://github.com/hugo-fixit/cmpt-translate)
+- Customizations are managed in params.toml and assets
 
-之后，你可以使用以下命令升级主题：
+## Updating Themes
 
 ```bash
-# 手动更新主题
 git submodule update --remote --merge themes/FixIt
 ```
 
-<details>
-  <summary>通过 NPM 脚本启动</summary>
+## Community & Support
 
-  ```bash
-  npm install
-  # 构建博客
-  npm run build
-  # 运行带有监视的本地调试服务器
-  npm run server
-  # 在生产环境中运行本地调试服务器
-  npm run server:production
-  # 更新主题子模块
-  npm run update:theme
-  ```
+- [FixIt Discussions](https://github.com/hugo-fixit/FixIt/discussions)
+- [FixIt Documentation](https://fixit.lruihao.cn/documentation/)
 
-</details>
+## License
 
-## 故障排除
-
-<details>
-  <summary>remote: Permission to git denied to github-actions[bot].</summary>
-  转到 Setting => Actions => General => Workflow permissions => 选中 "Read and write permissions"。
-</details>
-
-<!-- 该项目是使用 [hugo-fixit-starter1](https://github.com/hugo-fixit/hugo-fixit-starter1) 生成的。 -->
+This project is licensed under the MIT License.
