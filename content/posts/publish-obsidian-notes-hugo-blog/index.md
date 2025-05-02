@@ -177,7 +177,7 @@ I'm here! Hello everyone, this is my blog site where I will share technical info
 
 ````
 
-![](hello-world.webp "Hello World!")
+![ ](hello-world.webp "Hello World!")
 
 [Click here to visit][hello-world]
 
