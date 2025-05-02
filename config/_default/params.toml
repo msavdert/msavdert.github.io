@@ -564,7 +564,7 @@ disableThemeInject = false
   postFooterAfter = []
 
 [autoTranslate]
-  enable = true
+  enable = false
   service = 'client.edge'
   languages = ["turkish"]
   ignoreID = []
