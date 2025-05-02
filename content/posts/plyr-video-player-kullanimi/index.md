@@ -1,17 +1,17 @@
 ---
-title: "Plyr Video Player Kullanımı"
-subtitle: "Hugo Sitelerinizde Profesyonel Video Oynatıcı"
+title: "Using Plyr Video Player"
+subtitle: "Professional Video Player for Your Hugo Sites"
 date: 2025-05-01T10:00:00+03:00
 lastmod: 2025-05-01T10:00:00+03:00
 draft: false
 author: "Melih Savdert"
 authorLink: ""
-description: "Hugo sitelerinizde Plyr video oynatıcısını nasıl kullanacağınızı öğrenin"
+description: "Learn how to use the Plyr video player in your Hugo sites"
 license: ""
 images: []
 
 tags: ["hugo", "video", "plyr", "shortcode"]
-categories: ["Web Geliştirme"]
+categories: ["Web Development"]
 
 featuredImage: "plyr-featured.jpg"
 featuredImagePreview: "plyr-featured.jpg"
@@ -34,80 +34,211 @@ code:
   maxShownLines: 50
 ---
 
-## Plyr Nedir?
+## What is Plyr?
 
-Plyr, modern tarayıcıları destekleyen basit, hafif, erişilebilir ve özelleştirilebilir bir HTML5, YouTube ve Vimeo medya oynatıcısıdır. Sitenize profesyonel görünümlü video oynatıcıları kolayca ekleyebilmenize olanak tanır.
+Plyr is a simple, lightweight, accessible, and customizable HTML5, YouTube, and Vimeo media player that supports modern browsers. It allows you to easily add professional-looking video players to your site.
 
-## Neden Plyr?
+## Why Choose Plyr?
 
-- 📼 HTML Video & Audio, YouTube & Vimeo - tüm popüler formatları destekler
-- 💪 Erişilebilir - VTT altyazılar ve ekran okuyucular için tam destek
-- 🔧 Özelleştirilebilir - oynatıcıyı istediğiniz şekilde görünecek şekilde düzenleyebilirsiniz
-- 😎 Temiz HTML - doğru HTML elementleri kullanılmıştır
-- 📱 Duyarlı - modern cihazlar için tam duyarlı tasarım
+- 📼 HTML Video & Audio, YouTube & Vimeo - supports all popular formats
+- 💪 Accessible - full support for VTT captions and screen readers
+- 🔧 Customizable - you can style the player to appear exactly how you want
+- 😎 Clean HTML - uses the correct HTML elements
+- 📱 Responsive - fully responsive design for modern devices
 
-## Nasıl Kullanılır?
+## How to Use It
 
-Sitenize Plyr video oynatıcıyı eklemek için oluşturduğumuz shortcode'u kullanabilirsiniz:
+You can use the shortcode we've created to add the Plyr video player to your site:
 
-### 1. YouTube Videoları İçin
+### 1. For YouTube Videos
 
 ```go
 {{</* plyr id="bTqVqk7FSmY" type="youtube" */>}}
 ```
 
-Sonuç:
+Result:
 
 {{< plyr id="bTqVqk7FSmY" type="youtube" >}}
 
-### 2. Vimeo Videoları İçin
+### 2. For Vimeo Videos
 
 ```go
-{{</* plyr id="76979871" type="vimeo" */>}}
+{{</* plyr id="76979871" type="vimeo" loop="true" */>}}
 ```
 
-Sonuç:
+Result:
 
-{{< plyr id="76979871" type="vimeo" >}}
+{{< plyr id="76979871" type="vimeo" loop="true" >}}
 
-### 3. Yerel MP4 Videoları İçin
+### 3. For Local MP4/MOV Videos
 
 ```go
-{{</* plyr id="migration-demo.mov" type="video" poster="poster.jpg" autoplay="true" */>}}
+{{</* plyr id="/videos/my-video.mp4" type="video" poster="poster.jpg" autoplay="true" */>}}
 ```
 
-Eğer videoyu blog yazısının içine koymak isterseniz:
+Simple local video example:
 
 ```go
 {{</* plyr id="migration-demo.mov" type="video" */>}}
 ```
 
-## Parametre Açıklamaları
+Result:
 
-Plyr shortcode'u aşağıdaki parametreleri desteklemektedir:
+{{< plyr id="migration-demo.mov" type="video" >}}
 
-| Parametre | Açıklama | Varsayılan Değer |
-| --------- | -------- | ---------------- |
-| id | Video ID'si (YouTube/Vimeo) veya video dosya yolu | - |
-| type | Video tipi: "youtube", "vimeo" veya "video" | "youtube" |
-| autoplay | Otomatik oynatma: "true" veya "false" | "false" |
-| poster | Video poster görüntüsü için URL (sadece yerel videolar için) | "" |
-| class | Özel CSS sınıfı | "plyr-player" |
+## Advanced Features
 
-## Özelleştirme
+Our enhanced Plyr shortcode supports many advanced features:
 
-Plyr oynatıcınızı özelleştirmek isterseniz, `layouts/partials/custom/head.html` dosyasında CSS değişkenlerini düzenleyebilirsiniz:
+### With Subtitles/Captions
+
+```go
+{{</* plyr 
+  id="migration-demo.mov" 
+  type="video" 
+  captions="sample-captions.vtt"
+  captionsLang="en"
+  captionsLabel="English" 
+*/>}}
+```
+
+### Multiple Video Quality Options
+
+```go
+{{</* plyr 
+  id="high-quality.mp4,medium-quality.mp4,low-quality.mp4" 
+  type="video" 
+  quality="1080p,720p,480p" 
+*/>}}
+```
+
+### Video Chapters
+
+```go
+{{</* plyr 
+  id="migration-demo.mov" 
+  type="video" 
+  chapters="video-chapters.vtt" 
+*/>}}
+```
+
+### With Preview Thumbnails
+
+```go
+{{</* plyr 
+  id="migration-demo.mov" 
+  type="video" 
+  previewThumbnails="thumbnails.vtt" 
+*/>}}
+```
+
+### Multiple Tracks (Subtitles, Descriptions)
+
+```go
+{{</* plyr 
+  id="migration-demo.mov" 
+  type="video"
+  tracks="english.vtt,french.vtt,audio-description.vtt" 
+  trackLabels="English,Français,Audio Description" 
+  trackLangs="en,fr,en" 
+  trackKinds="captions,captions,descriptions" 
+*/>}}
+```
+
+### With Custom Content
+
+You can add additional information below the video:
+
+```go
+{{</* plyr id="migration-demo.mov" type="video" */>}}
+**Video Title**: Database Migration Demo
+*Recorded on May 1, 2025*
+
+This video demonstrates how to perform a database migration.
+{{</* /plyr */>}}
+```
+
+Result:
+
+{{< plyr id="migration-demo.mov" type="video" >}}
+**Video Title**: Database Migration Demo  
+*Recorded on May 1, 2025*
+
+This video demonstrates how to perform a database migration.
+{{< /plyr >}}
+
+## Complete Parameter List
+
+The enhanced Plyr shortcode supports the following parameters:
+
+| Parameter | Description | Default Value |
+| --------- | ----------- | ------------- |
+| id | Video ID (YouTube/Vimeo) or video file path | - |
+| type | Video type: "youtube", "vimeo" or "video" | "youtube" |
+| autoplay | Auto play: "true" or "false" | "false" |
+| poster | URL for video poster image (local videos only) | "" |
+| class | Custom CSS class | "plyr-player" |
+| captions | URL to captions/subtitle file (.vtt format) | "" |
+| captionsLang | Language code for captions | "en" |
+| captionsLabel | Display label for captions | "English" |
+| tracks | Comma-separated list of additional .vtt track files | "" |
+| trackLabels | Comma-separated list of labels for tracks | "" |
+| trackLangs | Comma-separated list of language codes for tracks | "" |
+| trackKinds | Comma-separated list of track types (captions,chapters,descriptions) | "" |
+| previewThumbnails | URL to preview thumbnails file (.vtt or .jpg) | "" |
+| chapters | URL to chapters file (.vtt format) | "" |
+| quality | For local videos: comma-separated quality labels | "" |
+| speed | Enable speed controls: "true" or "false" | "true" |
+| loop | Loop the video: "true" or "false" | "false" |
+| hideControls | Auto-hide controls: "true" or "false" | "false" |
+| muted | Start with audio muted: "true" or "false" | "false" |
+| clickToPlay | Allow clicking on the video to play/pause: "true" or "false" | "true" |
+
+## Creating VTT Files
+
+For subtitles, chapters and thumbnails you need to create VTT files. Here's a simple example:
+
+### Subtitles (captions.vtt)
+
+```
+WEBVTT
+
+00:00:01.000 --> 00:00:04.000
+Welcome to this video tutorial.
+
+00:00:05.000 --> 00:00:07.000
+Today we'll learn about database migrations.
+```
+
+### Chapters (chapters.vtt)
+
+```
+WEBVTT
+
+00:00:00.000 --> 00:00:30.000
+Introduction
+
+00:00:30.000 --> 00:01:30.000
+Database Setup
+
+00:01:30.000 --> 00:03:00.000
+Migration Process
+```
+
+## Customization
+
+If you want to customize your Plyr player, you can edit the CSS variables in the `layouts/partials/custom/head.html` file:
 
 ```css
 :root {
-    --plyr-color-main: #0077CC; /* Ana renk */
-    --plyr-video-controls-background: rgba(0, 0, 0, 0.8); /* Kontrol paneli arkaplanı */
-    --plyr-audio-controls-background: #fff; /* Ses kontrolleri arkaplanı */
+    --plyr-color-main: #0077CC; /* Main color */
+    --plyr-video-controls-background: rgba(0, 0, 0, 0.8); /* Control panel background */
+    --plyr-audio-controls-background: #fff; /* Audio controls background */
 }
 ```
 
-## Sonuç
+## Conclusion
 
-Bu basit shortcode ile sitenize profesyonel görünümlü video oynatıcıları kolayca ekleyebilirsiniz. Plyr, YouTube ve Vimeo videolarının yanı sıra yerel video dosyalarını da desteklediğinden dolayı, tüm video ihtiyaçlarınız için tek bir çözüm sunar.
+With this enhanced shortcode, you can easily add professional-looking video players to your site with advanced features like subtitles, multiple quality options, chapters, and more. Plyr supports YouTube and Vimeo videos as well as local video files, providing a powerful solution for all your video needs.
 
-Daha fazla bilgi için [Plyr'ın resmi sitesini](https://plyr.io) ziyaret edebilirsiniz.
+For more information, visit the [official Plyr website](https://plyr.io).

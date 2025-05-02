@@ -9,7 +9,65 @@
 <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const players = Plyr.setup('.plyr-player video, .plyr__video-embed');
+        // Default options for all players
+        const defaultOptions = {
+            captions: { active: true, language: 'auto', update: true },
+            controls: [
+                'play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 
+                'captions', 'settings', 'pip', 'airplay', 'fullscreen'
+            ],
+            settings: ['captions', 'quality', 'speed', 'loop'],
+            keyboard: { focused: true, global: true },
+            tooltips: { controls: true, seek: true },
+            previewThumbnails: { enabled: false },
+            quality: {
+                default: 720,
+                options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240]
+            },
+            i18n: {
+                qualityLabel: {
+                    4320: '8K',
+                    2880: '5K',
+                    2160: '4K',
+                    1440: '2K',
+                    1080: '1080p',
+                    720: '720p',
+                    576: '576p',
+                    480: '480p',
+                    360: '360p',
+                    240: '240p',
+                }
+            }
+        };
+
+        // Initialize Plyr for videos
+        const videoPlayers = Plyr.setup('.plyr-player video', defaultOptions);
+        
+        // Initialize Plyr for YouTube/Vimeo embeds
+        const embedPlayers = Plyr.setup('.plyr__video-embed', defaultOptions);
+        
+        // Process any custom configurations from data attributes
+        const allPlayers = [...videoPlayers, ...embedPlayers];
+        allPlayers.forEach(player => {
+            const container = player.elements.container;
+            if (container.dataset.plyrConfig) {
+                try {
+                    const customConfig = JSON.parse(container.dataset.plyrConfig);
+                    // Apply custom configurations
+                    Object.assign(player.config, customConfig);
+                    
+                    // Handle preview thumbnails if configured
+                    if (player.elements.original.dataset.posterThumbnails) {
+                        player.config.previewThumbnails = {
+                            enabled: true,
+                            src: player.elements.original.dataset.posterThumbnails
+                        };
+                    }
+                } catch (e) {
+                    console.error('Invalid Plyr configuration:', e);
+                }
+            }
+        });
     });
 </script>
 
@@ -17,5 +75,25 @@
 <style>
     :root {
         --plyr-color-main: #0077CC;
+        --plyr-video-control-color: #fff;
+        --plyr-badge-background: #5755d9;
+        --plyr-range-fill-background: #0077CC;
+    }
+    
+    /* Custom styles for captions */
+    .plyr__captions {
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    
+    /* Custom styles for the video info section */
+    .plyr-custom-info {
+        margin-top: 10px;
+        padding: 10px;
+        background: #f8f8f8;
+        border-radius: 4px;
+        font-size: 0.9em;
     }
 </style>
