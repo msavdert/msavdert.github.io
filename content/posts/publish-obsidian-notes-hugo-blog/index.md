@@ -176,6 +176,8 @@ I'm here! Hello everyone, this is my blog site where I will share technical info
 
 ````
 
+![Alt text](hello-world.webp "Hello World!")
+
 ## Step 5: Push Your Notes and Publish
 
 1. Use the **Obsidian Git plugin** to commit and push your changes to your private repo.
