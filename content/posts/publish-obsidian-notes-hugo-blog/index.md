@@ -2,8 +2,7 @@
 title: How to Publish Obsidian Notes as a Hugo Blog with GitHub Actions
 subtitle: A Step-by-Step Guide for Beginners
 description: Learn how to write blog posts in Obsidian, sync them with GitHub, and publish automatically to a Hugo static website using the FixIt theme and GitHub Actions.
-aliases:
-  - /how-to-publish-obsidian-notes-as-a-hugo-blog-with-github-actions/
+slug: how-to-publish-obsidian-notes-as-a-hugo-blog-with-github-actions
 date: 2025-05-02T11:40:39-04:00
 keywords:
   - obsidian
@@ -136,20 +135,46 @@ Blog/
 ````markdown
 ---
 title: My First Post
-subtitle: ""
-description: ""
+subtitle:
+description:
+slug:
 date: {{date:YYYY-MM-DD}}T{{time:HH:mm:ss}}{{time:Z}}
 keywords: 
 tags: 
 categories: 
-featuredImage: ""
-featuredImagePreview: ""
+featuredImage:
+featuredImagePreview:
 draft: false
 ---
 ````
 
 - Place each post in its own folder under `Blog/`.
 - Images or attachments go in the same folder.
+
+### Example Obsidian Blog Post
+
+````markdown
+---
+title: Hello World
+subtitle: My First Blog Post
+description: A short introduction to my new technical blog.
+slug: ""
+date: 2025-04-21T14:44:09-04:00
+keywords:
+  - hello world
+  - introduction
+  - blog
+tags:
+  - introduction
+categories: General
+featuredImage: featured-image.webp
+featuredImagePreview: ""
+draft: false
+---
+
+I'm here! Hello everyone, this is my blog site where I will share technical information.
+
+````
 
 ## Step 5: Push Your Notes and Publish
 
