@@ -16,6 +16,7 @@ categories: General
 featuredImage: featured-image.png
 featuredImagePreview: ""
 draft: false
+lightgallery: true
 ---
 
 > **Reference:** This guide builds on the ideas in [How I Built This Site: A Technical Walkthrough][how-i-built-this-site] and uses the [hugo-fixit](https://github.com/hugo-fixit/FixIt) theme for publishing your static website.
