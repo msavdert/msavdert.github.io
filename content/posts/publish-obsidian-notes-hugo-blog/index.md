@@ -23,6 +23,8 @@ draft: false
 
 If you want to write your blog posts in [Obsidian](https://obsidian.md/) using Markdown and publish them automatically to a Hugo static website hosted on GitHub Pages, this step-by-step guide is for you. Even if you have no prior experience, you’ll be able to set up a seamless workflow from note-taking to publishing.
 
+<!--more-->
+
 ---
 
 ## Overview
@@ -180,3 +182,8 @@ draft: false
 ---
 
 With this setup, you can write in Obsidian and publish to your Hugo blog with a simple git push!
+
+<!-- link reference definition -->
+<!-- markdownlint-disable-file MD052 -->
+[how-i-built-this-site]: {{< relref "/posts/how-i-built-this-site" >}}
+[caniuse]: https://caniuse.com/
