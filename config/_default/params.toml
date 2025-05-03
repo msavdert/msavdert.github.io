@@ -453,7 +453,7 @@ disableThemeInject = false
 
 # Analytics config
 [analytics]
-  enable = false
+  enable = true
   # Google Analytics
   [analytics.google]
     id = "G-G4WJPSFBPB"
