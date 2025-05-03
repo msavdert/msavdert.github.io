@@ -6,6 +6,7 @@ on:
       - 'assets/**'
       - 'config/**'
       - 'content/**'
+      - 'layouts/**'
       - 'data/**'
       - 'static/**'
       - 'themes/**'
