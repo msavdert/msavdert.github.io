@@ -2,3 +2,13 @@
 // Custom style
 // 自定义样式
 // ==============================
+
+#clustr-map-container {
+  max-width: 300px; /* Adjust max-width as needed */
+  margin: 1rem auto; /* Center the map (optional) */
+
+  & > * { // Target direct children (like iframe or img injected by the script)
+    max-width: 100%;
+    height: auto; // Maintain aspect ratio
+  }
+}
