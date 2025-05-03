@@ -436,7 +436,7 @@ disableThemeInject = false
 
 # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
 [verification]
-  google = ""
+  google = "QvSNGfT2fZwAN2YxQsPZIgDb6Rxr5BdBKDWuyTJcMos"
   bing = ""
   yandex = ""
   pinterest = ""
@@ -456,7 +456,7 @@ disableThemeInject = false
   enable = false
   # Google Analytics
   [analytics.google]
-    id = ""
+    id = "G-G4WJPSFBPB"
     # whether to anonymize IP
     anonymizeIP = true
   # Fathom Analytics
