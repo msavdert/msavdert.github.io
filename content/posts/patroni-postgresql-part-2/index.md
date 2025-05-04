@@ -1,5 +1,6 @@
 ---
 title: "PostgreSQL High Availability with Patroni - Part 2: Configuration and Failover"
+images: 
 subtitle: Cluster Configuration and Failover Testing
 description: Configuring a Patroni cluster with a Distributed Configuration Store (DCS), starting the cluster, and testing automatic/manual failover procedures.
 slug: 
@@ -18,8 +19,7 @@ tags:
   - high-availability
   - database
 categories: PostgreSQL
-images: 
-featuredImage: featured-image.webp
+featuredImage: cover.webp
 featuredImagePreview: ""
 draft: false
 lightgallery: false

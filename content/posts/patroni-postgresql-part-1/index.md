@@ -17,8 +17,7 @@ tags:
   - high-availability
   - database
 categories: PostgreSQL
-images: 
-featuredImage: featured-image.webp
+featuredImage: cover.webp
 featuredImagePreview: ""
 draft: false
 lightgallery: false
