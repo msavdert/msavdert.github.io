@@ -3,7 +3,7 @@ title: "PostgreSQL High Availability with Patroni - Part 1: Introduction and Set
 subtitle: Understanding Patroni and Initial Setup
 description: An introduction to Patroni for PostgreSQL high availability, covering its architecture, prerequisites, and basic installation steps.
 slug: 
-collections: PostgreSQL High Availability with Patroni
+collections: "[PostgreSQL High Availability with Patroni]"
 date: 2025-05-04T02:25:40-04:00
 keywords:
   - postgresql
