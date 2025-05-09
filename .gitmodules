@@ -5,6 +5,8 @@
 [submodule "themes/shortcode-docs-bookmark"]
 	path = themes/shortcode-docs-bookmark
 	url = https://github.com/hugo-fixit/shortcode-docs-bookmark
+	branch = main
 [submodule "themes/cmpt-translate"]
 	path = themes/cmpt-translate
 	url = https://github.com/hugo-fixit/cmpt-translate.git
+	branch = main
