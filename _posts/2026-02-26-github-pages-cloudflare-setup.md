@@ -19,12 +19,6 @@ First, you need to tell your GitHub repository that you intend to use a custom d
 4. Click **Save**.
    - *Note: This will automatically create a commit adding a `CNAME` file to the root of your repository.*
 
-### Add a DNS TXT record (Verification Steps)
-
-1. Create a TXT record in your DNS configuration for the following hostname: `_github-pages-challenge-msavdert.blog.savdert.com`
-2. Use this code for the value of the TXT record: `12bbba65edb51cea2861f647fe3d27`
-3. Wait until your DNS configuration changes. This could take up to 24 hours to propagate.
-
 ## 2. Configure Cloudflare DNS (CNAME Record)
 
 For a subdomain (like `blog.savdert.com`), GitHub requires a **CNAME** record, not A records.
@@ -37,8 +31,8 @@ For a subdomain (like `blog.savdert.com`), GitHub requires a **CNAME** record, n
    - **Proxy status:** ☁️ **DNS Only** (Grey cloud)
      - *Important: Leave it as "DNS Only" initially so GitHub can successfully provision an SSL certificate. You can turn on the orange cloud (Proxied) later if you want Cloudflare's features.*
 
-> [!warning] Security Warning
 > GitHub strongly recommends **never** using wildcard DNS records (e.g., `*.savdert.com`), as they put you at immediate risk of domain takeovers.
+{: .prompt-warning }
 
 ## 3. Verify Your Custom Domain (Highly Recommended)
 
