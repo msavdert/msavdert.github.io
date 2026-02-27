@@ -14,18 +14,17 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: DBA
+title: Database Insights by Melih Savdert
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Exploring PostgreSQL, databases, and modern data management
 
 description: >- # used by seo meta and the atom feed
-  Just DBA
+  A technical blog about database administration, PostgreSQL best practices, data engineering insights, and self-hosted solutions.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 #url: "https://msavdert.github.io"
-#url: "https://blog.savdert.com"
-url: ""
+url: "https://blog.savdert.com"
 
 github:
   username: msavdert # change to your GitHub username
