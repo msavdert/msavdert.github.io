@@ -257,7 +257,7 @@ _Caption text here_
 Text that wraps around the left-aligned image.
 ```
 
-![Desktop View](/assets/img/favicons/android-chrome-192x192.png){: .w-50 .left}
+![Desktop View](/assets/img/favicons/web-app-manifest-192x192.png){: .w-50 .left}
 This text demonstrates how content flows around a left-aligned image. The image is sized to 50% width and floats to the left, allowing text to wrap around it naturally.
 
 ### Theme-Aware Images
