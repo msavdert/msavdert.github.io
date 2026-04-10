@@ -15,6 +15,7 @@ First, you need to tell your GitHub repository that you intend to use a custom d
 2. Go to **Settings > Pages** (under the "Code and automation" section).
 3. Under **Custom domain**, type your subdomain (e.g., `blog.savdert.com`).
 4. Click **Save**.
+
    - *Note: This will automatically create a commit adding a `CNAME` file to the root of your repository.*
 
 ## 2. Configure Cloudflare DNS (CNAME Record)
@@ -23,11 +24,12 @@ For a subdomain (like `blog.savdert.com`), GitHub requires a **CNAME** record, n
 
 1. Go to your Cloudflare Dashboard and navigate to **DNS > Records**.
 2. Add a new record with the following details:
-   - **Type:** `CNAME`
-   - **Name:** `blog` (the subdomain part) and `www.blog`
-   - **Target:** `msavdert.github.io` (your GitHub Pages default domain)
-   - **Proxy status:** ☁️ **DNS Only** (Grey cloud)
-     - *Important: Leave it as "DNS Only" initially so GitHub can successfully provision an SSL certificate. You can turn on the orange cloud (Proxied) later if you want Cloudflare's features.*
+
+      - **Type:** `CNAME`
+      - **Name:** `blog` (the subdomain part) and `www.blog`
+      - **Target:** `msavdert.github.io` (your GitHub Pages default domain)
+      - **Proxy status:** ☁️ **DNS Only** (Grey cloud)
+         - *Important: Leave it as "DNS Only" initially so GitHub can successfully provision an SSL certificate. You can turn on the orange cloud (Proxied) later if you want Cloudflare's features.*
 
 > GitHub strongly recommends **never** using wildcard DNS records (e.g., `*.savdert.com`), as they put you at immediate risk of domain takeovers.
 {: .prompt-warning }
@@ -42,6 +44,7 @@ Verifying your domain at the account level prevents other GitHub users from taki
 4. Enter `blog.savdert.com` and click **Add domain**.
 5. GitHub will provide a **DNS TXT record** to add (e.g., `_github-pages-challenge-msavdert`).
 6. Go back to **Cloudflare DNS** and add the TXT record:
+
    - **Type:** `TXT`
    - **Name:** `_github-pages-challenge-msavdert` (or exactly as GitHub instructs)
    - **Content:** The challenge code provided by GitHub.
@@ -54,6 +57,7 @@ GitHub Pages automatically provisions HTTPS certificates for custom domains.
 1. Go back to your repository's **Settings > Pages**.
 2. Check the **Enforce HTTPS** box. *(This might take up to 24 hours to become available after DNS changes).*
 3. **Cloudflare SSL/TLS Settings:**
+
    - If you decide to enable Cloudflare's Proxy (Orange cloud) later, ensure your SSL/TLS encryption mode in Cloudflare is set to **Full** or **Full (Strict)** to avoid redirect loops. Do not use "Flexible".
 
 ---

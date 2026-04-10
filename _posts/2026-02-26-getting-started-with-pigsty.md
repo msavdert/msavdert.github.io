@@ -12,6 +12,7 @@ Pigsty is an open-source, battery-included PostgreSQL distribution that allows y
 Pigsty stands for "PostgreSQL In Great STYle" and encompasses Postgres, Infrastructure, Graphics, Service, Toolbox, and more. It's designed to make PostgreSQL deployment as easy as possible while offering advanced capabilities that rival commercial database services.
 
 Key features include:
+
 - **Extensible**: Supports 451+ PostgreSQL extensions
 - **Reliable**: Self-healing HA clusters with PITR and SSL security
 - **Observable**: Built-in monitoring with Victoria Metrics and Grafana
@@ -22,6 +23,7 @@ Key features include:
 ## Why Choose Pigsty for PostgreSQL?
 
 Traditional PostgreSQL setup requires extensive configuration for high availability, monitoring, and security. Pigsty simplifies this by providing:
+
 - Pre-configured HA clusters using Patroni and etcd
 - Point-in-time recovery with pgBackRest
 - Comprehensive monitoring dashboards
@@ -33,11 +35,13 @@ Traditional PostgreSQL setup requires extensive configuration for high availabil
 ### Prerequisites
 
 Pigsty runs on bare Linux systems. Supported distributions include:
+
 - Rocky Linux / AlmaLinux / RHEL 8/9/10
 - Ubuntu 22.04/24.04
 - Debian 12/13
 
 You'll need a fresh Linux node (physical or virtual) with:
+
 - x86_64 or aarch64 architecture
 - At least 2GB RAM (4GB recommended)
 - SSH access with sudo privileges
@@ -61,9 +65,10 @@ You'll need a fresh Linux node (physical or virtual) with:
    ```
 
 After deployment, you'll have:
+
 - PostgreSQL running on port 5432
-- Web UI available at http://your-ip (ports 80/443)
-- Monitoring dashboards at http://your-ip:3000
+- Web UI available at [http://your-ip](http://your-ip) on ports 80 and 443
+- Monitoring dashboards at [http://your-ip:3000](http://your-ip:3000)
 
 ### Creating Your First Database
 
@@ -105,6 +110,7 @@ bin/pgsql-add pg-test
 ## PostgreSQL-Specific Features in Pigsty
 
 Pigsty enhances PostgreSQL with:
+
 - **Extension Management**: Easy installation of popular extensions like PostGIS, TimescaleDB, etc.
 - **Performance Tuning**: Auto-tuning based on hardware and workload
 - **Backup & Recovery**: Integrated PITR with optional S3/MinIO storage

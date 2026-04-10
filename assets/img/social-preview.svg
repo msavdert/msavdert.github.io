@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Melih Savdert Blog</title>
+  <desc id="desc">A public technical blog about the shift from legacy DBA work to platform engineering.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" rx="32" />
+  <circle cx="1040" cy="120" r="140" fill="#ffffff" fill-opacity="0.08" />
+  <circle cx="160" cy="560" r="180" fill="#ffffff" fill-opacity="0.06" />
+  <rect x="80" y="88" width="170" height="12" rx="6" fill="url(#accent)" />
+
+  <text x="80" y="190" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="3">MELIH SAVDERT</text>
+  <text x="80" y="286" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">DBA to Platform</text>
+  <text x="80" y="364" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700">Engineer</text>
+  <text x="80" y="440" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="30">Practical notes on databases, infrastructure, automation,</text>
+  <text x="80" y="480" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="30">and learning in public.</text>
+
+  <rect x="80" y="525" width="320" height="18" rx="9" fill="url(#accent)" fill-opacity="0.9" />
+  <text x="80" y="585" fill="#93c5fd" font-family="Arial, Helvetica, sans-serif" font-size="26">blog.savdert.com</text>
+</svg>

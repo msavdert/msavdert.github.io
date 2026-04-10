@@ -32,6 +32,7 @@ For `inline code`, wrap it in backticks.
 ## Lists
 
 ### Ordered Lists
+
 Perfect for step-by-step instructions:
 
 ```markdown
@@ -41,6 +42,7 @@ Perfect for step-by-step instructions:
 ```
 
 ### Unordered Lists
+
 Great for bullet points:
 
 ```markdown
@@ -51,6 +53,7 @@ Great for bullet points:
 ```
 
 ### Task Lists
+
 Useful for tutorials or checklists:
 
 ```markdown
@@ -72,6 +75,7 @@ Use block quotes for highlighting important information or citations:
 Chirpy supports special prompt boxes for different types of messages. These are perfect for warnings, tips, and important notes:
 
 ### Tip Prompt
+
 ```markdown
 > This is a helpful tip!
 {: .prompt-tip }
@@ -81,6 +85,7 @@ Chirpy supports special prompt boxes for different types of messages. These are 
 {: .prompt-tip }
 
 ### Info Prompt
+
 ```markdown
 > Here's some important information.
 {: .prompt-info }
@@ -90,6 +95,7 @@ Chirpy supports special prompt boxes for different types of messages. These are 
 {: .prompt-info }
 
 ### Warning Prompt
+
 ```markdown
 > Be careful with this important warning!
 {: .prompt-warning }
@@ -99,6 +105,7 @@ Chirpy supports special prompt boxes for different types of messages. These are 
 {: .prompt-warning }
 
 ### Danger Prompt
+
 ```markdown
 > This indicates a dangerous or critical situation.
 {: .prompt-danger }
@@ -134,6 +141,7 @@ Add links to external resources:
 ```
 
 Or use automatic links:
+
 ```markdown
 <https://example.com>
 ```
@@ -153,6 +161,7 @@ This is the main text with a footnote[^1].
 ## Code
 
 ### Inline Code
+
 For short code snippets within text:
 
 ```markdown
@@ -160,6 +169,7 @@ Use `console.log()` for debugging.
 ```
 
 ### Code Blocks
+
 For longer code examples with syntax highlighting:
 
 ````markdown
@@ -177,6 +187,7 @@ function helloWorld() {
 ```
 
 ### File Paths
+
 Highlight file paths specially:
 
 ```markdown
@@ -234,22 +245,26 @@ graph TD
 ## Images
 
 ### Basic Images
+
 ```markdown
 ![Alt text](/path/to/image.jpg)
 ```
 
 ### Images with Captions
+
 ```markdown
 ![Alt text](/path/to/image.jpg)
 _Caption text here_
 ```
 
 ### Responsive Images
+
 ```markdown
 ![Alt text](/path/to/image.jpg){: width="400" height="300" .w-75}
 ```
 
 ### Floating Images
+
 ```markdown
 ![Alt text](/path/to/image.jpg){: .w-50 .left}
 Text that wraps around the left-aligned image.
@@ -259,6 +274,7 @@ Text that wraps around the left-aligned image.
 This text demonstrates how content flows around a left-aligned image. The image is sized to 50% width and floats to the left, allowing text to wrap around it naturally.
 
 ### Theme-Aware Images
+
 ```markdown
 ![Light mode image](/path/to/light.jpg){: .light}
 ![Dark mode image](/path/to/dark.jpg){: .dark}
@@ -277,14 +293,15 @@ Replace `VIDEO_ID` with the actual YouTube video ID from the URL.
 ## Best Practices
 
 1. **Front Matter**: Always include proper front matter at the top of your posts:
-   ```yaml
-   ---
-   title: "Your Post Title"
-   date: YYYY-MM-DD HH:MM:SS +0000
-   categories: [Category1, Category2]
-   tags: [tag1, tag2]
-   ---
-   ```
+
+  ```yaml
+  ---
+  title: "Your Post Title"
+  date: YYYY-MM-DD HH:MM:SS +0000
+  categories: [Category1, Category2]
+  tags: [tag1, tag2]
+  ---
+  ```
 
 2. **Enable Features**: Add `math: true` or `mermaid: true` to front matter when using those features.
 
