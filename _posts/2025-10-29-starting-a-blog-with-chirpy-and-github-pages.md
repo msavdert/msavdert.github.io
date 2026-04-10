@@ -141,17 +141,6 @@ When you push to GitHub, the blog deploys automatically through GitHub Actions.
 
 That's the entire workflow. Write posts locally, commit, push, and your blog updates automatically.
 
-## Previewing Locally (Optional)
-
-If you want to preview posts before publishing:
-
-```bash
-bundle install
-bundle exec jekyll serve
-```
-
-Then open `http://127.0.0.1:4000` in your browser.
-
 ## Using a Custom Domain
 
 If you want to use your own domain (like `blog.savdert.com`), this guide covers the complete setup: [Setting Up GitHub Pages with Custom Subdomain Using Cloudflare DNS]({{ site.baseurl }}/posts/github-pages-cloudflare-setup/)
