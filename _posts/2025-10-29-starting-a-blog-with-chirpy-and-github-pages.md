@@ -5,260 +5,224 @@ categories: [Blogging, Web Development]
 tags: [jekyll, chirpy, github-pages, tutorial, blogging]
 ---
 
-If you want to start a technical blog with a clean design, good defaults, and strong writing features, Chirpy is a very good choice.
+If you want to start a technical blog with a clean design, good defaults, and strong writing features, Chirpy is an excellent choice. This guide shows the fastest path: use the Chirpy starter template, create your repository, and start writing posts immediately on GitHub Pages.
 
-This guide shows a simple way to start from zero and publish a blog with the Chirpy theme on GitHub Pages. It is written for people who want a practical setup, not a complicated one.
+At the time of writing, this setup uses Chirpy 7.5.x.
 
-At the time of writing, this setup uses Chirpy 7.4.x.
+## Why Chirpy
 
-## Why I Chose Chirpy
+Chirpy is a Jekyll theme built specifically for technical writing. It includes everything you need out of the box:
 
-Chirpy is a Jekyll theme made for technical writing. It already includes many things that are useful for engineering blogs:
-
-- a clean reading layout
-- categories and tags
-- syntax highlighting
-- table of contents
+- clean, responsive reading layout
+- categories and tags for organization
+- syntax highlighting for code
+- automatic table of contents
 - dark and light mode
 - SEO and social metadata
-- GitHub Pages friendly deployment
+- built-in search functionality
+- PWA (Progressive Web App) support
+- seamless GitHub Pages deployment
 
-It lets you focus on writing instead of building a blog theme from scratch.
+It lets you focus on writing instead of building a blog platform from scratch.
 
-## What You Need
+## Creating Your Blog Repository
 
-Before you start, make sure you have:
+The fastest way to start is with the official Chirpy starter template. You don't need to fork the full theme or set up anything locally first.
 
-- a GitHub account
-- Git installed
-- Ruby and Bundler installed locally
-- a repository where the blog will live
+1. Go to [chirpy-starter](https://github.com/cotes2020/chirpy-starter) on GitHub
+2. Click **Use this template** → **Create a new repository**
+3. Name your repository `<username>.github.io` (replace `username` with your lowercase GitHub username)
+4. Make the repository public (required for the GitHub Free plan)
+5. Click **Create repository**
 
-If you want your site at `https://yourname.github.io`, create a repository with that exact name.
+That's it. You now have a complete, working blog repository ready to deploy.
 
-## The Easiest Starting Point
+## Repository Structure
 
-The easiest way is to start from the official Chirpy starter project:
-
-- [Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy)
-- [Chirpy Starter](https://github.com/cotes2020/chirpy-starter)
-
-This matters because the gem-based theme does not expose every file you need. In practice, a working Chirpy blog usually needs these core files in your repository:
-
-- `_config.yml`
-- `_plugins/`
-- `_tabs/`
-- `index.html`
-- a GitHub Pages deployment workflow
-
-So even if you install the theme gem, the starter repository is still the best reference for a complete setup.
-
-## Basic Setup
-
-Clone your blog repository and add Chirpy through Bundler.
-
-Your `Gemfile` should contain this line:
-
-```ruby
-gem "jekyll-theme-chirpy", "~> 7.4"
-```
-
-Then install dependencies:
-
-```bash
-bundle install
-```
-
-If you start from the Chirpy starter, most of the structure is already ready.
-
-## Required Repository Structure
-
-The minimum practical structure looks like this:
+When you create from the starter, you already have everything you need:
 
 ```text
 .
-├── _config.yml
-├── _plugins/
-├── _posts/
-├── _tabs/
-├── assets/
-├── .github/workflows/
-└── index.html
+├── _config.yml              # Site configuration
+├── _posts/                  # Your blog posts go here
+├── _tabs/                   # Static pages (About, Archives, etc.)
+├── _data/                   # Configuration data (contact, social)
+├── assets/                  # Images, CSS, JavaScript
+├── Gemfile                  # Ruby dependencies
+├── index.html               # Homepage
+├── CNAME                     # Custom domain (optional)
+└── .github/workflows/       # GitHub Actions deployment
 ```
 
-You do not need a large custom codebase for a normal blog.
+## Essential Configuration
 
-## Important Configuration
-
-Most of your setup lives in `_config.yml`.
-
-These fields matter first:
+Most setup happens in `_config.yml`. Update these key settings:
 
 ```yaml
 lang: en
-timezone: America/New_York
+timezone: UTC                           # or your timezone
 
 title: Your Blog Title
-tagline: A short one-line description
+tagline: A short tagline
 description: >-
-  A short summary of what your blog is about.
+  A brief description of your blog for search engines.
 
-url: "https://yourdomain.com"
-baseurl: ""
+url: "https://yourusername.github.io"
+baseurl: ""                             # Keep empty for root domain
 
 github:
   username: your-github-username
 
-social:
-  name: Your Name
-  email: your@email.com
-  links:
-    - https://github.com/your-github-username
-    - https://www.linkedin.com/in/your-linkedin
-
-avatar: "/assets/img/avatar.png"
-toc: true
+avatar: "/assets/img/avatar.png"        # Profile picture
+toc: true                               # Enable table of contents in posts
 ```
 
-### What These Settings Control
+### Social Media Links
 
-- `title`, `tagline`, and `description` control your site identity and SEO
-- `url` must match your real site URL
-- `baseurl` should stay empty for a root domain blog
-- `social` links are used in the sidebar and metadata
-- `avatar` is the profile image shown in the theme
-- `toc` enables the table of contents in posts
+Edit `_data/contact.yml` to add your social profiles. These appear in the sidebar:
 
-## Pages You Will Usually Keep
+```yaml
+- icon: fab fa-github
+  text: GitHub
+  link: https://github.com/your-username
 
-Chirpy includes tab pages such as:
-
-- About
-- Archives
-- Categories
-- Tags
-
-These live under `_tabs/`. You can edit them, keep them simple, or remove the ones you do not need.
+- icon: fab fa-linkedin
+  text: LinkedIn
+  link: https://linkedin.com/in/your-profile
+```
 
 ## Writing Your First Post
 
-Create a file inside `_posts/` using this format:
+Posts go in the `_posts/` directory with this filename format:
 
 ```text
-YYYY-MM-DD-title-of-post.md
+YYYY-MM-DD-post-title.md
 ```
 
-Example:
+Example: `2025-10-29-my-first-post.md`
 
-```text
-2025-10-29-starting-a-blog-with-chirpy-and-github-pages.md
-```
-
-Each post needs front matter at the top:
+Add front matter at the top of each post:
 
 ```yaml
 ---
-title: "My Post Title"
+title: "My First Post"
 date: 2025-10-29 09:00:00 +0000
-categories: [Blogging, Web Development]
-tags: [jekyll, chirpy, github-pages]
+categories: [Blogging]
+tags: [tutorial, writing]
 ---
 ```
 
-Then write in normal Markdown.
+Then write in regular Markdown. Chirpy gets your title from the front matter, so don't add an `# H1` header in the body.
 
-One important rule with Chirpy: the post title already comes from front matter, so you usually do not need another `# H1` inside the post body.
+## Deploying Your Blog
 
-## Running the Site Locally
+When you push to GitHub, the blog deploys automatically through GitHub Actions.
 
-To preview your blog locally:
+1. Clone your repository locally:
+   ```bash
+   git clone https://github.com/yourusername/yourusername.github.io.git
+   cd yourusername.github.io
+   ```
+
+2. Create a new post file:
+   ```bash
+   # Create _posts/2025-10-29-hello-world.md
+   # Add your post content
+   ```
+
+3. Commit and push:
+   ```bash
+   git add _posts/
+   git commit -m "Add new post"
+   git push
+   ```
+
+4. Visit `https://yourusername.github.io` (usually ready within a minute or two)
+
+That's the entire workflow. Write posts locally, commit, push, and your blog updates automatically.
+
+## Previewing Locally (Optional)
+
+If you want to preview posts before publishing:
 
 ```bash
-bundle exec jekyll serve -l
+bundle install
+bundle exec jekyll serve
 ```
 
-Then open:
+Then open `http://127.0.0.1:4000` in your browser.
 
-```text
-http://127.0.0.1:4000
-```
+## Using a Custom Domain
 
-This is the fastest way to check formatting, links, and layout before pushing.
+If you want to use your own domain (like `blog.savdert.com`), this guide covers the complete setup: [Setting Up GitHub Pages with Custom Subdomain Using Cloudflare DNS]({{ site.baseurl }}/posts/github-pages-cloudflare-setup/)
 
-## GitHub Pages Deployment
+The process is:
+1. Set your custom domain in repository settings
+2. Configure DNS records at your provider
+3. GitHub automatically provisions HTTPS
+4. Your blog is live at your custom domain
 
-The cleanest modern setup is to deploy with GitHub Actions.
+## Customizing the Blog
 
-Your workflow should do four things:
+The starter includes default pages in `_tabs/`:
+- **About** - your bio and introduction
+- **Archives** - posts organized by date
+- **Categories** - posts grouped by category
+- **Tags** - posts grouped by tag
 
-1. check out the repository
-2. configure GitHub Pages
-3. build the Jekyll site
-4. upload and deploy the built site
+Edit these files directly or remove ones you don't need.
 
-This is better than relying on the old branch-based Pages flow because it is clearer and easier to maintain.
+To customize CSS, copy `assets/css/jekyll-theme-chirpy.scss` from the theme and add your custom styles at the end.
 
-## Custom Domain
+## Updating Chirpy
 
-If you want to use your own domain:
-
-1. add your domain in GitHub Pages settings
-2. create the correct DNS record in your DNS provider
-3. add a `CNAME` file to the repository root if needed
-4. enable HTTPS after DNS is working
-
-For subdomains, a `CNAME` record is usually the correct choice.
-
-## Files You Probably Do Not Need
-
-If your workflow is simple and you only write posts, you usually do not need extra template conveniences such as:
-
-- `.devcontainer/`
-- `.vscode/`
-- local helper scripts you never use
-- unused submodules
-
-Keep the repository focused on content and deployment.
-
-## How to Update Chirpy Later
-
-This is the part that confuses many people.
-
-If your `Gemfile` says:
+The starter uses Chirpy as a gem:
 
 ```ruby
-gem "jekyll-theme-chirpy", "~> 7.4"
+gem "jekyll-theme-chirpy", "~> 7.5"
 ```
 
-that means:
+This allows patch updates automatically. To update to a new minor version:
 
-- you allow patch updates inside `7.4.x`
-- you do not automatically move to `7.5.x`
+1. Update the version in `Gemfile`
+2. Run `bundle update jekyll-theme-chirpy`
+3. Check the [release notes](https://github.com/cotes2020/jekyll-theme-chirpy/releases) for changes
 
-So your update process is:
+## Key Chirpy Features for Writing
 
-1. check the Chirpy release notes
-2. update the version constraint in `Gemfile` when you want the new minor release
-3. run `bundle update jekyll-theme-chirpy`
-4. review any release notes about breaking changes
-5. compare your copied starter files with the latest starter project when needed
+**Front Matter Options:**
 
-This last part is important. When Chirpy changes, the gem may update cleanly but your copied repository files may still need manual edits.
+```yaml
+---
+title: "Post Title"
+date: 2025-10-29 09:00:00 +0000
+categories: [Category]
+tags: [tag1, tag2]
+pin: true                    # Pin post to top
+---
+```
+
+**Built-in Markdown Support:**
+- Code syntax highlighting with multiple languages
+- Math expressions (LaTeX and MathML)
+- Mermaid diagrams for flowcharts and charts
+- Images with automatic lightbox
+- Embedded YouTube videos
+
+**Navigation and Organization:**
+- Posts automatically organized by date
+- Category and tag filtering
+- Built-in search across all posts
+- Automatic table of contents from headers
 
 ## My Recommendation
 
-If you want a stable blog, keep your setup simple:
+Keep your blog setup simple:
 
-- use Chirpy through the gem
-- keep `_config.yml` clean
-- write posts under `_posts/`
-- deploy through GitHub Actions
-- update the theme only after reading release notes
+- Use the starter template (don't fork the full theme)
+- Keep `_config.yml` minimal
+- Write posts in `_posts/` following the naming convention
+- Commit and push to deploy
+- Update Chirpy only when you need new features
 
-That gives you a blog that feels modern without turning your blog repository into a large engineering project.
-
-## Final Thought
-
-Chirpy is a strong choice for engineers who want to publish technical writing with very little visual work.
-
-You can start small, keep the repository clean, and grow the blog over time without rebuilding the whole platform.
+This approach keeps your repository focused on content, makes updates easier, and lets you grow your blog over time without unnecessary complexity.
