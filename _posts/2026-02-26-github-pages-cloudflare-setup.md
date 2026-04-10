@@ -1,11 +1,9 @@
 ---
 title: "Setting Up GitHub Pages with Custom Subdomain Using Cloudflare DNS"
 date: 2026-02-26 11:00:00 +0000
-categories: [Web Development, GitHub Pages]
-tags: [github-pages, cloudflare, dns, custom-domain, subdomain]
+categories: [Web Development, Infrastructure]
+tags: [github-pages, cloudflare, dns, custom-domain]
 ---
-
-# GitHub Pages & Cloudflare DNS Setup for Subdomains
 
 This guide provides the official, recommended steps to configure a custom subdomain (e.g., `blog.savdert.com`) for GitHub Pages using Cloudflare as your DNS provider, based on GitHub's official documentation.
 

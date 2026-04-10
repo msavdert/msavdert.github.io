@@ -32,4 +32,4 @@ jobs:
           node-version: 24
 
       - name: Lint Markdown
-        run: npx --yes markdownlint-cli "**/*.md" --ignore node_modules --ignore _site --ignore vendor
+        run: npx --yes markdownlint-cli "**/*.md" --ignore node_modules --ignore _site --ignore vendor --ignore .bundle

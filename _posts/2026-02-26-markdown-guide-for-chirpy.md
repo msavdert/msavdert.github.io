@@ -1,11 +1,9 @@
 ---
 title: "Markdown Guide for Chirpy: Writing Better Blog Posts"
 date: 2026-02-26 12:00:00 +0000
-categories: [Blogging]
-tags: [markdown, chirpy]
+categories: [Blogging, Web Development]
+tags: [markdown, chirpy, jekyll]
 ---
-
-# Markdown Guide for Chirpy: Writing Better Blog Posts
 
 When writing blog posts with the Chirpy Jekyll theme, you have access to a rich set of Markdown features that can make your content more engaging and professional. This guide will walk you through the key formatting options available in Chirpy, with practical examples you can use in your posts.
 

@@ -1,11 +1,9 @@
 ---
 title: "Documenting My Shift to Platform Engineering"
 date: 2026-04-09 09:00:00 +0000
-categories: [Career, Engineering]
-tags: [career, platform-engineering, dba, github]
+categories: [Career, Platform Engineering]
+tags: [career-transition, platform-engineering, dba, learning-in-public]
 ---
-
-# A New Direction
 
 I am in the middle of a career shift.
 

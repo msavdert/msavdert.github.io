@@ -5,8 +5,6 @@ categories: [Database, PostgreSQL]
 tags: [postgresql, pigsty, self-hosting, rds]
 ---
 
-# Introduction to Pigsty
-
 Pigsty is an open-source, battery-included PostgreSQL distribution that allows you to self-host PostgreSQL databases like a professional RDS (Relational Database Service). Developed by Vonng, Pigsty provides a comprehensive platform for deploying, managing, and monitoring PostgreSQL clusters with enterprise-grade features.
 
 ## What is Pigsty?
