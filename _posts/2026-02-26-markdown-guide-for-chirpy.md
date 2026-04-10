@@ -294,14 +294,14 @@ Replace `VIDEO_ID` with the actual YouTube video ID from the URL.
 
 1. **Front Matter**: Always include proper front matter at the top of your posts:
 
-  ```yaml
-  ---
-  title: "Your Post Title"
-  date: YYYY-MM-DD HH:MM:SS +0000
-  categories: [Category1, Category2]
-  tags: [tag1, tag2]
-  ---
-  ```
+    ```yaml
+    ---
+    title: "Your Post Title"
+    date: YYYY-MM-DD HH:MM:SS +0000
+    categories: [Category1, Category2]
+    tags: [tag1, tag2]
+    ---
+    ```
 
 2. **Enable Features**: Add `math: true` or `mermaid: true` to front matter when using those features.
 

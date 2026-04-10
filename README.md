@@ -21,7 +21,6 @@ It is the writing space for my shift from legacy DBA work toward platform engine
 ├── _data/             # Theme and contact data
 ├── assets/            # Images, icons, and static assets
 ├── docs/              # Writing guide and templates
-├── tools/             # Local helper scripts
 └── .github/workflows/ # Build, deploy, and quality checks
 ```
 
@@ -36,13 +35,13 @@ bundle install
 Run the site locally:
 
 ```bash
-./tools/run.sh
+bundle exec jekyll serve -l
 ```
 
 Build the site for production:
 
 ```bash
-./tools/test.sh
+JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 ## Writing Standard
@@ -62,4 +61,4 @@ The site is deployed through GitHub Pages using GitHub Actions. Content pushed t
 
 ## License
 
-This repository is published under the MIT License.
+Unless noted otherwise, the written blog content in this repository is licensed under Creative Commons Attribution 4.0 International.

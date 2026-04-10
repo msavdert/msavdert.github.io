@@ -67,8 +67,8 @@ You'll need a fresh Linux node (physical or virtual) with:
 After deployment, you'll have:
 
 - PostgreSQL running on port 5432
-- Web UI available at [http://your-ip](http://your-ip) on ports 80 and 443
-- Monitoring dashboards at [http://your-ip:3000](http://your-ip:3000)
+- Web UI available at `http://your-ip` on ports 80 and 443
+- Monitoring dashboards at `http://your-ip:3000`
 
 ### Creating Your First Database
 
