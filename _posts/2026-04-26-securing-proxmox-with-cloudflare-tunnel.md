@@ -5,8 +5,7 @@ categories: [Security, Networking]
 tags: [cloudflare, zero-trust, proxmox, cloudflared]
 ---
 
-In my [previous post](/posts/proxmox-hetzner-deployment-guide/), we set up Proxmox VE on a Hetzner dedicated server. While the installation is complete, accessing the Proxmox dashboard usually involves opening port `8006` to the public internet or using a VPN. 
-
+In my [previous post](/posts/proxmox-hetzner-deployment-guide/), we set up Proxmox VE on a Hetzner dedicated server. While the installation is complete, accessing the Proxmox dashboard usually involves opening port `8006` to the public internet or using a VPN.
 A more modern and secure approach is to use **Cloudflare Tunnels (Cloudflared)**. This allows you to access your dashboard via a nice hostname (e.g., `proxmox.yourdomain.com`) without opening any inbound ports on your server.
 
 ## Why Cloudflare Tunnels?
@@ -90,8 +89,7 @@ systemctl restart cloudflared
 systemctl status cloudflared
 ```
 
-You should now be able to access your Proxmox GUI at `https://proxmox.yourdomain.com`. 
-
+You should now be able to access your Proxmox GUI at `https://proxmox.yourdomain.com`.
 ## Next Steps
 
 Now that your dashboard is secure, I highly recommend setting up **Cloudflare Access** policies to restrict access only to your email address or specific IP ranges. This adds a powerful layer of security before someone even sees the Proxmox login screen.

@@ -69,8 +69,7 @@ You can now access the Proxmox Web GUI at `https://<SERVER_IP>:8006/`.
 
 ## 3. Network Configuration: The Modern Way
 
-Hetzner enforces strict IP/MAC binding. If you have only one Public IP, you cannot use a standard Bridged setup for your VMs without purchasing additional IPs and MAC addresses. 
-
+Hetzner enforces strict IP/MAC binding. If you have only one Public IP, you cannot use a standard Bridged setup for your VMs without purchasing additional IPs and MAC addresses.
 Instead, we will use **Masquerading (NAT)** with the new **Software-Defined Network (SDN)** feature in Proxmox. This allows your VMs to sit behind the host's IP, which is both cost-effective and secure.
 
 ### Enable IP Forwarding
