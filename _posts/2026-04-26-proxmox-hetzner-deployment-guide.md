@@ -151,5 +151,5 @@ In the next post, we'll look at [how to securely access this dashboard using Clo
 ## References
 
 - [Install Proxmox VE on Debian 13 Trixie - Proxmox VE](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_13_Trixie)
-- [Install and Configure Proxmox VE | Hetzner Community](https://community.hetzner.com/tutorials/install-and-configure-proxmox_ve)
+- [Install and Configure Proxmox VE|Hetzner Community](https://community.hetzner.com/tutorials/install-and-configure-proxmox_ve)
 - [Install Proxmox on a Hetzner Dedicated Server with 1 IP using SDN and without KVM using QEMU - CyanLabs](https://cyanlabs.net/tutorials/install-proxmox-on-a-hetzner-dedicated-server-with-1-ip-using-sdn-and-without-kvm-using-qemu/)
