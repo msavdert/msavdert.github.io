@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Platform & DevOps Blog"
-date: 2026-05-22
+date: 2026-02-01
 draft: false
 description: "An introduction to this blog and a high-level overview of Platform Engineering, DevOps, DBA, and Kubernetes topics."
 tags: ["career-transition", "platform-engineering", "kubernetes", "devops", "databases"]

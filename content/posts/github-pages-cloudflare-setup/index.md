@@ -1,6 +1,6 @@
 ---
 title: "Setting Up GitHub Pages with Custom Subdomain Using Cloudflare DNS"
-date: 2026-02-26
+date: 2026-02-27
 draft: false
 description: "A step-by-step guide to configuring a custom subdomain for GitHub Pages using Cloudflare DNS while ensuring proper SSL/TLS and security settings."
 categories: ["Infrastructure"]

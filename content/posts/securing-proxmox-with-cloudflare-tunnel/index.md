@@ -1,6 +1,6 @@
 ---
 title: "Securing Proxmox VE with Cloudflare Tunnel: A Zero Trust Approach"
-date: 2026-04-26
+date: 2026-04-27
 draft: false
 description: "How to securely expose your Proxmox VE dashboard without opening inbound ports by deploying Cloudflare Tunnels (cloudflared) and Zero Trust."
 categories: ["Infrastructure"]
