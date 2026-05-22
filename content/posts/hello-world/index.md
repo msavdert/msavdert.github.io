@@ -3,8 +3,8 @@ title: "Welcome to my Platform & DevOps Blog"
 date: 2026-05-22
 draft: false
 description: "An introduction to this blog and a high-level overview of Platform Engineering, DevOps, DBA, and Kubernetes topics."
-tags: ["Platform Engineering", "Kubernetes", "DevOps", "DBA"]
-categories: ["Introduction", "Tech"]
+tags: ["career-transition", "platform-engineering", "kubernetes", "devops", "databases"]
+categories: ["Career"]
 ---
 
 Welcome to my new technical blog! Here, I will be sharing guides, architectural insights, and hands-on tutorials about platform engineering, cloud-native deployments, database administration, and automating complex systems.

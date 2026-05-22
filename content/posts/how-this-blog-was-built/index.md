@@ -3,8 +3,8 @@ title: "Building a Modern Tech Blog with Hugo, Blowfish, and GitHub Actions"
 date: 2026-05-22
 draft: false
 description: "A detailed technical guide on how this blog was built, configured, and deployed using Hugo, the Blowfish theme, Git submodules, and a native Node.js 24 GitHub Actions pipeline."
-tags: ["Hugo", "Blowfish", "GitHub Actions", "CI/CD", "DevOps"]
-categories: ["Tutorial", "Infrastructure"]
+tags: ["hugo", "blowfish", "github-actions", "ci-cd", "devops"]
+categories: ["Infrastructure"]
 ---
 
 Building a fast, lightweight, and modern developer blog doesn't have to require heavy server infrastructure or database systems. In this article, I will walk you through the exact technical details of how this blog was initialized, customized, and automated using Hugo, the Blowfish theme, Git submodules, and GitHub Actions.
