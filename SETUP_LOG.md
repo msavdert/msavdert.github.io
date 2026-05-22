@@ -109,3 +109,43 @@ git commit -m "<commit message>"
 git push origin main
 ```
 The GitHub Actions workflow then compiles the site using Hugo and deploys it live to **`https://msavdert.github.io/`**.
+
+---
+
+## 7. Checking & Upgrading the Blowfish Theme Version
+Since the Blowfish theme is installed as a Git submodule, you can easily check your current version and update it to a newer release without manually downloading any files.
+
+### A. How to Check Your Current Version
+Run either of these commands in your repository root directory:
+1. Check submodule status:
+   ```bash
+   git submodule status
+   ```
+   *Output format: `e9699d8c5da... themes/blowfish (v2.103.0)`*
+
+2. Describe the checked-out tag directly:
+   ```bash
+   git -C themes/blowfish describe --tags
+   ```
+   *Output: `v2.103.0`*
+
+### B. How to Update to the Latest Theme Version
+To pull the latest updates from the official Blowfish theme repository and update your site:
+
+1. **Pull the latest remote updates:**
+   ```bash
+   git submodule update --remote --merge
+   ```
+   *(Alternatively, if you want to pin to a specific release tag like `v2.104.0`):*
+   ```bash
+   git -C themes/blowfish fetch --tags
+   git -C themes/blowfish checkout v2.104.0
+   ```
+
+2. **Commit and deploy the version change:**
+   ```bash
+   git add themes/blowfish
+   git commit -m "Upgrade Blowfish theme to latest version"
+   git push origin main
+   ```
+   GitHub Actions will automatically pick up the new submodule commit reference, rebuild the site using the updated theme files, and deploy it.
