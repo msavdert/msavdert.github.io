@@ -149,3 +149,60 @@ To pull the latest updates from the official Blowfish theme repository and updat
    git push origin main
    ```
    GitHub Actions will automatically pick up the new submodule commit reference, rebuild the site using the updated theme files, and deploy it.
+
+---
+
+## 8. Creating & Publishing New Blog Posts
+
+To maintain a clean database and proper rendering of content, follow these rules and best practices when adding a new blog post.
+
+### A. Folder Structure (Page Bundles)
+Always use **Hugo Page Bundles** (a folder per post) rather than a single markdown file directly in the posts directory. This keeps local media and assets clean and organized.
+
+*   **Structure:**
+    ```text
+    content/
+    └── posts/
+        └── my-new-article-slug/
+            ├── index.md           <-- The post content
+            ├── architecture.png   <-- Post-specific image
+            └── benchmark.csv      <-- Local data or assets
+    ```
+
+### B. Front-Matter Metadata Rules
+Every `index.md` file must start with a YAML front-matter block. Here are the primary variables supported by Blowfish:
+
+```yaml
+---
+title: "Your Post Title Here"
+date: 2026-05-22
+draft: false
+description: "A 1-2 sentence description shown in SEO results and card previews."
+tags: ["Kubernetes", "DevOps"] # Case-sensitive tags, used for taxonomies
+categories: ["Infrastructure"] # High-level categorization
+# Optional:
+# showAuthor: true
+# featureImage: "architecture.png" # Path relative to this folder
+# showTableOfContents: true
+---
+```
+
+### C. Drafting vs. Publishing
+*   **Draft Mode (`draft: true`):** If you are actively working on a post and do not want it to be published live on the website, set `draft: true` in the front-matter. GitHub Actions builds will automatically ignore it.
+*   **Publishing (`draft: false`):** When the article is ready, set `draft: false` and push the changes.
+
+### D. Adding Images & Referencing Them
+1. Place the image inside your post's folder (e.g., `content/posts/my-new-article-slug/my-image.png`).
+2. Reference the image relatively in your markdown:
+   ```markdown
+   ![Alt text describing image](my-image.png)
+   ```
+   Blowfish will automatically compile the relative path and serve it correctly.
+
+### E. Steps to Publish:
+Once you have written your post:
+```bash
+git add content/posts/my-new-article-slug/
+git commit -m "feat: publish post about [topic]"
+git push origin main
+```

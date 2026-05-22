@@ -120,10 +120,55 @@ git push origin main
 
 ## The Git-Backed Content Workflow
 
-To publish new posts, I write Markdown files locally, group them under `content/posts/`, and use standard git commands to publish:
+To add new content to this blog, I follow a set of simple, structured formatting rules:
+
+### A. Folder Structure (Page Bundles)
+Instead of putting a single flat `.md` file under `content/posts/`, I use **Hugo Page Bundles** (a folder per post). This encapsulates all resources (images, attachments) with the text itself.
+
+*   **Structure:**
+    ```text
+    content/
+    └── posts/
+        └── my-new-post/
+            ├── index.md           <-- The main markdown post
+            ├── schema.png         <-- Image referenced by index.md
+            └── performance.csv    <-- Supplemental attachment
+    ```
+
+### B. Front-Matter Metadata Setup
+At the top of every `index.md` file, a YAML front-matter block contains the metadata that Blowfish reads to display card titles, summary descriptions, categories, and tags:
+
+```yaml
+---
+title: "Your Post Title Here"
+date: 2026-05-22
+draft: false
+description: "A short, 1-2 sentence description shown in SEO listings and search results."
+tags: ["Kubernetes", "DevOps"] # Case-sensitive taxonomies
+categories: ["Infrastructure"] # High-level groupings
+# Optional settings:
+# showAuthor: true
+# featureImage: "schema.png"   # Relative path to directory image
+# showTableOfContents: true
+---
+```
+
+### C. Formatting and Images
+*   **Headings:** Use `##` or `###` for headings. Avoid using `#` as the post title in front-matter is already mapped to the HTML `<h1>` header automatically.
+*   **Images:** Keep images inside the post's bundle folder and reference them using clean relative paths:
+    ```markdown
+    ![Alt text describing image](schema.png)
+    ```
+
+### D. Drafting vs. Publishing
+*   Set `draft: true` while writing. The local/CI build pipeline ignores drafts.
+*   Set `draft: false` when you are ready to publish.
+
+### E. Commit & Publish
+Once written and verified, the post is pushed to GitHub:
 ```bash
-git add .
-git commit -m "feat: publish new article"
+git add content/posts/my-new-post/
+git commit -m "feat: publish post about [topic]"
 git push origin main
 ```
-Within 60 seconds, GitHub Actions finishes the Hugo compilation and deploys it live to the global CDN.
+Within 60 seconds, GitHub Actions finishes the Hugo compilation and deploys the new post live to the global CDN at **`https://msavdert.github.io/`**.
