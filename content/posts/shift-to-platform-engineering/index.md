@@ -4,7 +4,7 @@ date: 2026-04-09
 draft: false
 description: "An introduction to my career transition from a legacy database administrator (DBA) to a Platform Engineer, documenting my learning path."
 categories: ["Career"]
-tags: ["career-transition", "platform-engineering", "learning-in-public"]
+tags: ["platform-engineering"]
 ---
 
 I am in the middle of a career shift.

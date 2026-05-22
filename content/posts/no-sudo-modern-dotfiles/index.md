@@ -4,7 +4,7 @@ date: 2026-04-16
 draft: false
 description: "How to build a fully native, no-sudo, and secure developer environment configuration utilizing Zellij, Neovim, uv, and 1Password CLI integration."
 categories: ["DevOps"]
-tags: ["dotfiles", "automation", "ci-cd", "productivity"]
+tags: ["dotfiles", "automation"]
 ---
 
 Managing my developer environment across multiple machines (macOS, Ubuntu, Oracle Linux, and minimal Docker containers) has always been a challenge. Most dotfiles setups I've seen rely on brittle helper scripts, global `sudo` installations, or manual token handling.

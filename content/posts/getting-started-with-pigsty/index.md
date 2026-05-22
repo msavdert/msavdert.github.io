@@ -4,7 +4,7 @@ date: 2026-02-26
 draft: false
 description: "An in-depth guide to getting started with Pigsty, an open-source, battery-included PostgreSQL distribution for self-hosting high-availability database clusters."
 categories: ["Database"]
-tags: ["postgresql", "pigsty", "self-hosting", "databases"]
+tags: ["postgresql", "pigsty"]
 ---
 
 Pigsty is an open-source, battery-included PostgreSQL distribution that allows you to self-host PostgreSQL databases like a professional RDS (Relational Database Service). Developed by Vonng, Pigsty provides a comprehensive platform for deploying, managing, and monitoring PostgreSQL clusters with enterprise-grade features.

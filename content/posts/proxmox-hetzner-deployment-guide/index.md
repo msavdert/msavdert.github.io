@@ -4,7 +4,7 @@ date: 2026-04-26
 draft: false
 description: "A step-by-step guide to deploying Proxmox VE on Hetzner dedicated bare metal servers using Debian 13 (Trixie) and configuring a modern, scalable NAT networking stack using SDN."
 categories: ["Infrastructure"]
-tags: ["proxmox", "hetzner", "sdn", "virtualization"]
+tags: ["proxmox", "hetzner"]
 ---
 
 Deploying Proxmox VE on a Hetzner Dedicated Server can be a bit tricky due to Hetzner's specific network security policies. In this guide, we will walk through the process of installing Proxmox VE on a fresh Debian 13 (Trixie) installation and configuring a modern, scalable networking stack using Software-Defined Networking (SDN).

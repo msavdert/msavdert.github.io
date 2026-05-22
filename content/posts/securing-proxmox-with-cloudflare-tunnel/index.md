@@ -4,7 +4,7 @@ date: 2026-04-27
 draft: false
 description: "How to securely expose your Proxmox VE dashboard without opening inbound ports by deploying Cloudflare Tunnels (cloudflared) and Zero Trust."
 categories: ["Infrastructure"]
-tags: ["cloudflare", "zero-trust", "proxmox", "security", "networking"]
+tags: ["proxmox", "cloudflare"]
 ---
 
 In my [previous post](/posts/proxmox-hetzner-deployment-guide/), we set up Proxmox VE on a Hetzner dedicated server. While the installation is complete, accessing the Proxmox dashboard usually involves opening port `8006` to the public internet or using a VPN.

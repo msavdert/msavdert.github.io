@@ -4,7 +4,7 @@ date: 2026-05-05
 draft: false
 description: "A comprehensive walkthrough for installing Proxmox VE 9.x on a Hetzner Dedicated Server using a ZFS RAID0 layout, including QEMU-based GUI setup, SDN NAT networking, and Tailscale integration."
 categories: ["Infrastructure"]
-tags: ["proxmox", "hetzner", "zfs", "virtualization"]
+tags: ["proxmox", "hetzner", "zfs"]
 ---
 
 Deploying Proxmox VE on a Hetzner dedicated bare metal server with a single public IP can be challenging because Hetzner does not provide standard IPMI/KVM access out of the box unless requested. 
