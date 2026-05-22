@@ -19,17 +19,24 @@ Building a fast, lightweight, and modern developer blog doesn't have to require 
 
 ---
 
-## Step 1: Repository Initialization & Git Submodules
+## Step 1: Repository Initialization & GitHub Setup
 
-When duplicating or using a Hugo template like `nunocoracao/blowfish_template`, the theme directory (`themes/blowfish`) is referenced as a Git submodule. By default, cloning or creating a new repo doesn't download the submodule content automatically.
+To build a personal site hosted on GitHub Pages, we start by duplicating a starter template.
 
-To populate the empty `themes/blowfish` directory with the official Blowfish repository, the following command is executed:
+1. **Use the Template:** Go to the official [nunocoracao/blowfish_template](https://github.com/nunocoracao/blowfish_template) repository and click **"Use this template" -> "Create a new repository"**.
+2. **Repository Naming:** Name your repository exactly **`<username>.github.io`** (for example, ours is `msavdert.github.io`). Using this exact format tells GitHub to serve this repository as your root personal domain. Make the repository **Public**.
+3. **Configure Settings on GitHub:**
+   - **GitHub Actions Workflow Permissions:** Navigate to `Settings -> Actions -> General`, scroll down to *Workflow permissions*, and select **"Read and write permissions"**. This is critical because the compilation process needs write access to deploy.
+   - **GitHub Pages Deployment Source:** Navigate to `Settings -> Pages`. Under *Build and deployment -> Source*, change the dropdown selection from *Deploy from a branch* to **"GitHub Actions"**. This instructs GitHub to run your custom build workflow file (`.github/workflows/pages.yml`) rather than deploying raw files.
+
+### Initializing the Theme Submodule Locally
+When copying or cloning the template, the theme folder (`themes/blowfish`) is initialized as an empty directory reference. To download the actual theme source files, clone your newly created repository locally and run the following command in the root folder:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-This pulls down the actual theme source files mapped to the commit reference defined in `.gitmodules`.
+This populates `/themes/blowfish/` with all the files from the official [nunocoracao/blowfish](https://github.com/nunocoracao/blowfish) repository.
 
 ---
 
